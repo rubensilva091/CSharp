@@ -1,0 +1,341 @@
+\hypertarget{classa2___regras_negocio_1_1_equ_regras}{}\doxysection{a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras Class Reference}
+\label{classa2___regras_negocio_1_1_equ_regras}\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a1c2ea4d2936b216a6f4a69ff8f1f7503}{Regista\+Equipamento}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento}{Equipamento}} e)
+\begin{DoxyCompactList}\small\item\em Regista um equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a8970e0ce9b222d066465dbbdd957711b}{Existe\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica se existe Equipamento através do código \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_abc7f2c9c31f028f7f2fe13b450b41333}{Edita\+Equipamento}} (int cod, string marca, string modelo, string tipo, Date\+Time data\+Aquisicao)
+\begin{DoxyCompactList}\small\item\em Edita as informações de um equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_af82c5a8675aaedac82b1da7cca6efe09}{Adiciona\+Vulnerabilidade\+Equipamento}} (int cod, int codv)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova vulnerabilidade a um equipamento \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}} $>$ \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a3e113219460b591a719bde63aa9506f1}{Mostra\+Equipamentos}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta informação dos equipamentos \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}} \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a52d760f9b1340001e7579e0fe60fae08}{Obter\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém equipamento completo através do código recebido \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a451807940c35595effa9554b11393340}{Obter\+Quantidade\+Vulnerabilidades\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém quantidade de vulnerabilidades num equipamento \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a40293c5eefac9061715e2d4e95817673}{Obter\+Codigo\+Vulnerabilidade}} (int cod, int pos)
+\begin{DoxyCompactList}\small\item\em Obtém código da vulnerabilidade \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_a58adf1964d02966bd25cd0f8d9943b0f}{Guardar\+Equipamentos}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_equ_regras_ae58e584f4eaf9860cc009fed846761a9}{Carregar\+Equipamentos}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Equipamento \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_af82c5a8675aaedac82b1da7cca6efe09}\label{classa2___regras_negocio_1_1_equ_regras_af82c5a8675aaedac82b1da7cca6efe09}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!AdicionaVulnerabilidadeEquipamento@{AdicionaVulnerabilidadeEquipamento}}
+\index{AdicionaVulnerabilidadeEquipamento@{AdicionaVulnerabilidadeEquipamento}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{AdicionaVulnerabilidadeEquipamento()}{AdicionaVulnerabilidadeEquipamento()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Adiciona\+Vulnerabilidade\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{int}]{codv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adiciona uma nova vulnerabilidade a um equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de equipamento \\
+\hline
+{\em codv} & Codigo da Vulnerabilidade a adicionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se for adicionada False se não for adicionada
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98         \{}
+\DoxyCodeLine{99             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{100             \{}
+\DoxyCodeLine{101                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a53612d081ce04778b8b242e5f7344687}{AdicionaVulnerabilidadeEquipamento}}(cod, codv);}
+\DoxyCodeLine{102             \}}
+\DoxyCodeLine{103             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{104             \{}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{108             \{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{110             \}}
+\DoxyCodeLine{111         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_ae58e584f4eaf9860cc009fed846761a9}\label{classa2___regras_negocio_1_1_equ_regras_ae58e584f4eaf9860cc009fed846761a9}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!CarregarEquipamentos@{CarregarEquipamentos}}
+\index{CarregarEquipamentos@{CarregarEquipamentos}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{CarregarEquipamentos()}{CarregarEquipamentos()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Carregar\+Equipamentos (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178         \{}
+\DoxyCodeLine{179             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{180             \{}
+\DoxyCodeLine{181                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_af38941d77072fa338bcf83066d49f5b5}{CarregarEquipamentos}}(fileName);}
+\DoxyCodeLine{182             \}}
+\DoxyCodeLine{183             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{184             \{}
+\DoxyCodeLine{185                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{186             \}}
+\DoxyCodeLine{187             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{188             \{}
+\DoxyCodeLine{189                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{190             \}}
+\DoxyCodeLine{191         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_abc7f2c9c31f028f7f2fe13b450b41333}\label{classa2___regras_negocio_1_1_equ_regras_abc7f2c9c31f028f7f2fe13b450b41333}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!EditaEquipamento@{EditaEquipamento}}
+\index{EditaEquipamento@{EditaEquipamento}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{EditaEquipamento()}{EditaEquipamento()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Edita\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{string}]{marca,  }\item[{string}]{modelo,  }\item[{string}]{tipo,  }\item[{Date\+Time}]{data\+Aquisicao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de um equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código do equipamento a editar\\
+\hline
+{\em marca} & Nova marca do equipamento\\
+\hline
+{\em modelo} & Novo modelo do equipamento\\
+\hline
+{\em tipo} & Novo tipo do equipamento\\
+\hline
+{\em data\+Aquisicao} & Nova data de aquisição do Equipamento\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{77             \{}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_aaac5876868ca7ef442d16236d2ae3152}{EditaEquipamento}}(cod, marca, modelo, tipo, dataAquisicao);}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{81             \{}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{83             \}}
+\DoxyCodeLine{84             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{85             \{}
+\DoxyCodeLine{86                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a8970e0ce9b222d066465dbbdd957711b}\label{classa2___regras_negocio_1_1_equ_regras_a8970e0ce9b222d066465dbbdd957711b}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!ExisteEquipamento@{ExisteEquipamento}}
+\index{ExisteEquipamento@{ExisteEquipamento}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{ExisteEquipamento()}{ExisteEquipamento()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Existe\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se existe Equipamento através do código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de equipamento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se existir False se não existir
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_af60a10e69f07c12df9975871ce36f6fb}{ExisteEquipamento}}(cod);}
+\DoxyCodeLine{62         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a58adf1964d02966bd25cd0f8d9943b0f}\label{classa2___regras_negocio_1_1_equ_regras_a58adf1964d02966bd25cd0f8d9943b0f}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!GuardarEquipamentos@{GuardarEquipamentos}}
+\index{GuardarEquipamentos@{GuardarEquipamentos}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{GuardarEquipamentos()}{GuardarEquipamentos()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Guardar\+Equipamentos (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158         \{}
+\DoxyCodeLine{159             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{160             \{}
+\DoxyCodeLine{161                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a6d02e7d48157eee8f8aae8875a5d0b04}{GuardarEquipamentos}}(fileName);}
+\DoxyCodeLine{162             \}}
+\DoxyCodeLine{163             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{164             \{}
+\DoxyCodeLine{165                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{166             \}}
+\DoxyCodeLine{167             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{168             \{}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{170             \}}
+\DoxyCodeLine{171         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a3e113219460b591a719bde63aa9506f1}\label{classa2___regras_negocio_1_1_equ_regras_a3e113219460b591a719bde63aa9506f1}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!MostraEquipamentos@{MostraEquipamentos}}
+\index{MostraEquipamentos@{MostraEquipamentos}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{MostraEquipamentos()}{MostraEquipamentos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}}$>$ a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Mostra\+Equipamentos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta informação dos equipamentos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Equipamento Completo \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118         \{}
+\DoxyCodeLine{119             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a8790d7905bf9e7e1175da94c07fd14b3}{MostraEquipamentos}}();}
+\DoxyCodeLine{120         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a40293c5eefac9061715e2d4e95817673}\label{classa2___regras_negocio_1_1_equ_regras_a40293c5eefac9061715e2d4e95817673}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!ObterCodigoVulnerabilidade@{ObterCodigoVulnerabilidade}}
+\index{ObterCodigoVulnerabilidade@{ObterCodigoVulnerabilidade}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{ObterCodigoVulnerabilidade()}{ObterCodigoVulnerabilidade()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Obter\+Codigo\+Vulnerabilidade (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém código da vulnerabilidade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo Equipamento\\
+\hline
+{\em pos} & Posição do código da vulnerabilidade\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código da vulnerabilidade
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149         \{}
+\DoxyCodeLine{150             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_aac4fdd6b995feeef397f209a2b82c0df}{ObterCodigoVulnerabilidade}}(cod, pos);}
+\DoxyCodeLine{151         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a52d760f9b1340001e7579e0fe60fae08}\label{classa2___regras_negocio_1_1_equ_regras_a52d760f9b1340001e7579e0fe60fae08}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!ObterEquipamento@{ObterEquipamento}}
+\index{ObterEquipamento@{ObterEquipamento}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{ObterEquipamento()}{ObterEquipamento()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}} a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Obter\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém equipamento completo através do código recebido 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve equipamento completo
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128         \{}
+\DoxyCodeLine{129             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_ab252958c5a0f8bbf1c03894bca2f9bcf}{ObterEquipamento}}(cod);}
+\DoxyCodeLine{130         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a451807940c35595effa9554b11393340}\label{classa2___regras_negocio_1_1_equ_regras_a451807940c35595effa9554b11393340}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!ObterQuantidadeVulnerabilidadesEquipamento@{ObterQuantidadeVulnerabilidadesEquipamento}}
+\index{ObterQuantidadeVulnerabilidadesEquipamento@{ObterQuantidadeVulnerabilidadesEquipamento}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{ObterQuantidadeVulnerabilidadesEquipamento()}{ObterQuantidadeVulnerabilidadesEquipamento()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Obter\+Quantidade\+Vulnerabilidades\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém quantidade de vulnerabilidades num equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código de equipamento\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantidade de vulnerabilidades do equipamento
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138         \{}
+\DoxyCodeLine{139             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_afd1f66bcebe4588f1a26c3c338780feb}{ObterQuantidadeVulnerabilidadesEquipamento}}(cod);}
+\DoxyCodeLine{140         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_equ_regras_a1c2ea4d2936b216a6f4a69ff8f1f7503}\label{classa2___regras_negocio_1_1_equ_regras_a1c2ea4d2936b216a6f4a69ff8f1f7503}} 
+\index{a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}!RegistaEquipamento@{RegistaEquipamento}}
+\index{RegistaEquipamento@{RegistaEquipamento}!a2\_RegrasNegocio.EquRegras@{a2\_RegrasNegocio.EquRegras}}
+\doxysubsubsection{\texorpdfstring{RegistaEquipamento()}{RegistaEquipamento()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Equ\+Regras.\+Regista\+Equipamento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento}{Equipamento}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista um equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Equipamento Completo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e.\+Codigo se o equipamento for inserido 0 se não for inserido o equipamento
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{40             \{}
+\DoxyCodeLine{41                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos}{Equipamentos}}.\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a05101420d5e914e577ff3f39030aeb4e}{RegistaEquipamento}}(e);}
+\DoxyCodeLine{42             \}}
+\DoxyCodeLine{43             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{44             \{}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{46             \}}
+\DoxyCodeLine{47             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{48             \{}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO : "} + x.Message);}
+\DoxyCodeLine{50             \}}
+\DoxyCodeLine{51         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a2\+\_\+\+Regras\+Negocio/\mbox{\hyperlink{a2___regras_negocio_2_equipamentos_8cs}{Equipamentos.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,213 @@
+\hypertarget{classa2___regras_negocio_1_1_vul_regras}{}\doxysection{a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras Class Reference}
+\label{classa2___regras_negocio_1_1_vul_regras}\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_vul_regras_a6447d6576aabf1a3d166dae2386ffd9e}{Regista\+Vulnerabilidade}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_vulnerabilidade}{Vulnerabilidade}} v)
+\begin{DoxyCompactList}\small\item\em Regista uma vulnerabilidade \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_vul_regras_aaafacfad162492cdb0ec6581b71265e7}{Edita\+Vulnerabilidade}} (int cod, string descricao, \mbox{\hyperlink{namespacec1___objetos_negocio_aa1a3ce8c5aa451209e8fe657649f86c3}{Nivel\+Impacto}} impacto, \mbox{\hyperlink{namespacec1___objetos_negocio_ae3c0042700a5fef0878ea6fc71a117bf}{Estado}} estado)
+\begin{DoxyCompactList}\small\item\em Edita as informações de uma vulnerabilidade \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_vulnerabilidade_aux}{Vulnerabilidade\+Aux}} $>$ \mbox{\hyperlink{classa2___regras_negocio_1_1_vul_regras_a5e0d09de03a205da7491e90c336e8c4b}{Listar\+Vulnerabilidades\+Impacto}} (List$<$ int $>$ lst)
+\begin{DoxyCompactList}\small\item\em Lista vuilnerabilidades relativas a auditoria agrupadas por nivel de impacto \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_vulnerabilidade_aux}{Vulnerabilidade\+Aux}} \mbox{\hyperlink{classa2___regras_negocio_1_1_vul_regras_adcb2d84d23edb7bcee3f89b000db2b47}{Obter\+Vulnerabilidade\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Lista vuilnerabilidades relativas a equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_vul_regras_a88d0265dbcdf5d7756717d7b2c377205}{Guardar\+Vulnerabilidades}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Vulnerabilidade \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_vul_regras_a1c8c39b288b252d67e920e1518f0c520}{Carregar\+Vulnerabilidades}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Vulnerabilidade \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_vul_regras_a1c8c39b288b252d67e920e1518f0c520}\label{classa2___regras_negocio_1_1_vul_regras_a1c8c39b288b252d67e920e1518f0c520}} 
+\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}!CarregarVulnerabilidades@{CarregarVulnerabilidades}}
+\index{CarregarVulnerabilidades@{CarregarVulnerabilidades}!a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsubsection{\texorpdfstring{CarregarVulnerabilidades()}{CarregarVulnerabilidades()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras.\+Carregar\+Vulnerabilidades (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Vulnerabilidade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121         \{}
+\DoxyCodeLine{122             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{123             \{}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades}{Vulnerabilidades}}.\mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades_a3212928df6c3be2298aa8a3a436716fa}{CarregarVulnerabilidades}}(fileName);}
+\DoxyCodeLine{125             \}}
+\DoxyCodeLine{126             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{127             \{}
+\DoxyCodeLine{128                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{129             \}}
+\DoxyCodeLine{130             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{131             \{}
+\DoxyCodeLine{132                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{133             \}}
+\DoxyCodeLine{134         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_vul_regras_aaafacfad162492cdb0ec6581b71265e7}\label{classa2___regras_negocio_1_1_vul_regras_aaafacfad162492cdb0ec6581b71265e7}} 
+\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}!EditaVulnerabilidade@{EditaVulnerabilidade}}
+\index{EditaVulnerabilidade@{EditaVulnerabilidade}!a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsubsection{\texorpdfstring{EditaVulnerabilidade()}{EditaVulnerabilidade()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras.\+Edita\+Vulnerabilidade (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{string}]{descricao,  }\item[{\mbox{\hyperlink{namespacec1___objetos_negocio_aa1a3ce8c5aa451209e8fe657649f86c3}{Nivel\+Impacto}}}]{impacto,  }\item[{\mbox{\hyperlink{namespacec1___objetos_negocio_ae3c0042700a5fef0878ea6fc71a117bf}{Estado}}}]{estado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de uma vulnerabilidade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código da vulnerabilidade a editar\\
+\hline
+{\em descricao} & Nova descrição da vulnerabilidade\\
+\hline
+{\em impacto} & Novo Nivel de impacto da vulnerabilidade\\
+\hline
+{\em estado} & Novo estado da vulnerabilidade\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63         \{}
+\DoxyCodeLine{64             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{65             \{}
+\DoxyCodeLine{66                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades}{Vulnerabilidades}}.\mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades_ac2b544568b779c411a03a8402b3af166}{EditaVulnerabilidade}}(cod, descricao, impacto, estado);}
+\DoxyCodeLine{67             \}}
+\DoxyCodeLine{68             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{69             \{}
+\DoxyCodeLine{70                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{73             \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{75             \}}
+\DoxyCodeLine{76         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_vul_regras_a88d0265dbcdf5d7756717d7b2c377205}\label{classa2___regras_negocio_1_1_vul_regras_a88d0265dbcdf5d7756717d7b2c377205}} 
+\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}!GuardarVulnerabilidades@{GuardarVulnerabilidades}}
+\index{GuardarVulnerabilidades@{GuardarVulnerabilidades}!a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsubsection{\texorpdfstring{GuardarVulnerabilidades()}{GuardarVulnerabilidades()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras.\+Guardar\+Vulnerabilidades (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Vulnerabilidade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{103             \{}
+\DoxyCodeLine{104                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades}{Vulnerabilidades}}.\mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades_a67a8ed7329d63678061d7dfae0e06deb}{GuardarVulnerabilidades}}(fileName);}
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{107             \{}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{111             \{}
+\DoxyCodeLine{112                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{113             \}}
+\DoxyCodeLine{114         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_vul_regras_a5e0d09de03a205da7491e90c336e8c4b}\label{classa2___regras_negocio_1_1_vul_regras_a5e0d09de03a205da7491e90c336e8c4b}} 
+\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}!ListarVulnerabilidadesImpacto@{ListarVulnerabilidadesImpacto}}
+\index{ListarVulnerabilidadesImpacto@{ListarVulnerabilidadesImpacto}!a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsubsection{\texorpdfstring{ListarVulnerabilidadesImpacto()}{ListarVulnerabilidadesImpacto()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_vulnerabilidade_aux}{Vulnerabilidade\+Aux}}$>$ a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras.\+Listar\+Vulnerabilidades\+Impacto (\begin{DoxyParamCaption}\item[{List$<$ int $>$}]{lst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Lista vuilnerabilidades relativas a auditoria agrupadas por nivel de impacto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Lista de codigos de vulnerabilidades\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83         \{}
+\DoxyCodeLine{84             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades}{Vulnerabilidades}}.\mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades_a7a6a9f80aed347e172a1060c9622dbe0}{ListarVulnerabilidadesImpacto}}(lst);}
+\DoxyCodeLine{85         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_vul_regras_adcb2d84d23edb7bcee3f89b000db2b47}\label{classa2___regras_negocio_1_1_vul_regras_adcb2d84d23edb7bcee3f89b000db2b47}} 
+\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}!ObterVulnerabilidadeEquipamento@{ObterVulnerabilidadeEquipamento}}
+\index{ObterVulnerabilidadeEquipamento@{ObterVulnerabilidadeEquipamento}!a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsubsection{\texorpdfstring{ObterVulnerabilidadeEquipamento()}{ObterVulnerabilidadeEquipamento()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_vulnerabilidade_aux}{Vulnerabilidade\+Aux}} a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras.\+Obter\+Vulnerabilidade\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Lista vuilnerabilidades relativas a equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código da vulnerabilidade a listar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades}{Vulnerabilidades}}.\mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades_a75f7fb9f19f6029a64d2ffaf442a7788}{ObterVulnerabilidadeEquipamento}}(cod);}
+\DoxyCodeLine{94         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_vul_regras_a6447d6576aabf1a3d166dae2386ffd9e}\label{classa2___regras_negocio_1_1_vul_regras_a6447d6576aabf1a3d166dae2386ffd9e}} 
+\index{a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}!RegistaVulnerabilidade@{RegistaVulnerabilidade}}
+\index{RegistaVulnerabilidade@{RegistaVulnerabilidade}!a2\_RegrasNegocio.VulRegras@{a2\_RegrasNegocio.VulRegras}}
+\doxysubsubsection{\texorpdfstring{RegistaVulnerabilidade()}{RegistaVulnerabilidade()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Vul\+Regras.\+Regista\+Vulnerabilidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_vulnerabilidade}{Vulnerabilidade}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista uma vulnerabilidade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vulnerabilidade Completa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existir essa vulnerabilidade 1 se for inserida a vulnerabilidade
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{40             \{}
+\DoxyCodeLine{41                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades}{Vulnerabilidades}}.\mbox{\hyperlink{classa3___dados_classes_1_1_vulnerabilidades_a26813abcd9d0dfb0015356afcbe2f65f}{RegistaVulnerabilidade}}(v);}
+\DoxyCodeLine{42             \}}
+\DoxyCodeLine{43             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{44             \{}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{46             \}}
+\DoxyCodeLine{47             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{48             \{}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{50             \}}
+\DoxyCodeLine{51         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a2\+\_\+\+Regras\+Negocio/\mbox{\hyperlink{a2___regras_negocio_2_vulnerabilidades_8cs}{Vulnerabilidades.\+cs}}\end{DoxyCompactItemize}

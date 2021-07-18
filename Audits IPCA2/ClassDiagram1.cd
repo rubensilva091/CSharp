@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="a2_RegrasNegocio.AudRegras">
+    <Position X="8.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="a2_RegrasNegocio.ColRegras">
+    <Position X="6.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="a2_RegrasNegocio.EquRegras">
+    <Position X="4.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="a2_RegrasNegocio.VulRegras">
+    <Position X="2.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TrabalhoPrático1_19432_19433.Program">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABBAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="c1_ObjetosNegocio.Auditoria">
+    <Position X="8.5" Y="3" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="c1_ObjetosNegocio.Colaborador">
+    <Position X="6.5" Y="3" Width="1.75" />
+    <InheritanceLine Type="c1_ObjetosNegocio.Pessoa" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="2.632" />
+        <Point X="7.375" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="c1_ObjetosNegocio.Equipamento">
+    <Position X="4.5" Y="3" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="c1_ObjetosNegocio.Pessoa">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="c1_ObjetosNegocio.Vulnerabilidade">
+    <Position X="2.5" Y="3" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

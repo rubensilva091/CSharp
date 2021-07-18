@@ -1,0 +1,98 @@
+\hypertarget{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program}{}\doxysection{Trabalho\+Prático1\+\_\+19432\+\_\+19433.\+Program Class Reference}
+\label{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program}\index{TrabalhoPrático1\_19432\_19433.Program@{TrabalhoPrático1\_19432\_19433.Program}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program_a2615061d851395aae7b99b183be6edf9}{Try\+Catch\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Verifica a validade de leitura de um numero inteiro \end{DoxyCompactList}\item 
+static Date\+Time \mbox{\hyperlink{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program_a24abc932496ee146edf1cd2e229f519a}{Try\+Catch\+Date\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Verifica a validade de leitura de uma data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program_a24abc932496ee146edf1cd2e229f519a}\label{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program_a24abc932496ee146edf1cd2e229f519a}} 
+\index{TrabalhoPrático1\_19432\_19433.Program@{TrabalhoPrático1\_19432\_19433.Program}!TryCatchDateTime@{TryCatchDateTime}}
+\index{TryCatchDateTime@{TryCatchDateTime}!TrabalhoPrático1\_19432\_19433.Program@{TrabalhoPrático1\_19432\_19433.Program}}
+\doxysubsubsection{\texorpdfstring{TryCatchDateTime()}{TryCatchDateTime()}}
+{\footnotesize\ttfamily static Date\+Time Trabalho\+Prático1\+\_\+19432\+\_\+19433.\+Program.\+Try\+Catch\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica a validade de leitura de uma data 
+
+\begin{DoxyReturn}{Returns}
+Data válida
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{734         \{}
+\DoxyCodeLine{735             DateTime x = DateTime.Today;}
+\DoxyCodeLine{736             \textcolor{keywordtype}{bool} verif = \textcolor{keyword}{false};}
+\DoxyCodeLine{737             \textcolor{keywordflow}{do}}
+\DoxyCodeLine{738             \{}
+\DoxyCodeLine{739                 \textcolor{keywordflow}{try}}
+\DoxyCodeLine{740                 \{}
+\DoxyCodeLine{741                     x = DateTime.Parse(Console.ReadLine());}
+\DoxyCodeLine{742                 \}}
+\DoxyCodeLine{743                 \textcolor{keywordflow}{catch} (FormatException)}
+\DoxyCodeLine{744                 \{}
+\DoxyCodeLine{745                     Console.Write(\textcolor{stringliteral}{"Caracteres Inválidos.\(\backslash\)nInsira Novamente > "});}
+\DoxyCodeLine{746                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{747                 \}}
+\DoxyCodeLine{748                 \textcolor{keywordflow}{catch} (Exception e)}
+\DoxyCodeLine{749                 \{}
+\DoxyCodeLine{750                     Console.WriteLine(\textcolor{stringliteral}{"ERRO: "} + e.Message);}
+\DoxyCodeLine{751                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{752                 \}}
+\DoxyCodeLine{753                 verif = \textcolor{keyword}{true};}
+\DoxyCodeLine{754             \} \textcolor{keywordflow}{while} (verif == \textcolor{keyword}{false});}
+\DoxyCodeLine{755 }
+\DoxyCodeLine{756             \textcolor{keywordflow}{return} x;}
+\DoxyCodeLine{757         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program_a2615061d851395aae7b99b183be6edf9}\label{class_trabalho_pr_xC3_xA1tico1__19432__19433_1_1_program_a2615061d851395aae7b99b183be6edf9}} 
+\index{TrabalhoPrático1\_19432\_19433.Program@{TrabalhoPrático1\_19432\_19433.Program}!TryCatchInt@{TryCatchInt}}
+\index{TryCatchInt@{TryCatchInt}!TrabalhoPrático1\_19432\_19433.Program@{TrabalhoPrático1\_19432\_19433.Program}}
+\doxysubsubsection{\texorpdfstring{TryCatchInt()}{TryCatchInt()}}
+{\footnotesize\ttfamily static int Trabalho\+Prático1\+\_\+19432\+\_\+19433.\+Program.\+Try\+Catch\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica a validade de leitura de um numero inteiro 
+
+\begin{DoxyReturn}{Returns}
+Numero Inteiro válido
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{705         \{}
+\DoxyCodeLine{706             \textcolor{keywordtype}{int} x = 0;}
+\DoxyCodeLine{707             \textcolor{keywordtype}{bool} verif = \textcolor{keyword}{false};}
+\DoxyCodeLine{708             \textcolor{keywordflow}{do}}
+\DoxyCodeLine{709             \{}
+\DoxyCodeLine{710                 \textcolor{keywordflow}{try}}
+\DoxyCodeLine{711                 \{}
+\DoxyCodeLine{712                     x = \textcolor{keywordtype}{int}.Parse(Console.ReadLine());}
+\DoxyCodeLine{713                 \}}
+\DoxyCodeLine{714                 \textcolor{keywordflow}{catch} (FormatException)}
+\DoxyCodeLine{715                 \{}
+\DoxyCodeLine{716                     Console.Write(\textcolor{stringliteral}{"Caracteres Inválidos.\(\backslash\)nInsira Novamente > "});}
+\DoxyCodeLine{717                 \}}
+\DoxyCodeLine{718                 \textcolor{keywordflow}{catch} (Exception e)}
+\DoxyCodeLine{719                 \{}
+\DoxyCodeLine{720                     Console.Write(\textcolor{stringliteral}{"ERRO: "} + e.Message);}
+\DoxyCodeLine{721                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{722                 \}}
+\DoxyCodeLine{723                 verif = \textcolor{keyword}{true};}
+\DoxyCodeLine{724             \} \textcolor{keywordflow}{while} (verif == \textcolor{keyword}{false});}
+\DoxyCodeLine{725 }
+\DoxyCodeLine{726             \textcolor{keywordflow}{return} x;}
+\DoxyCodeLine{727         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}

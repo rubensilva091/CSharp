@@ -1,0 +1,513 @@
+\hypertarget{classa3___dados_classes_1_1_auditorias}{}\doxysection{a3\+\_\+\+Dados\+Classes.\+Auditorias Class Reference}
+\label{classa3___dados_classes_1_1_auditorias}\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_afc0eb7a262b4f0690cc53a364e5d1c32}{Regista\+Auditoria}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria}{Auditoria}} a)
+\begin{DoxyCompactList}\small\item\em Regista uma auditoria \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_acf9d1976b629df08d7ead98e1cb90ec3}{Existe\+Auditoria}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica se existe determinada auditoria \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_aa71191f8cf4cfc450cce22c242e21c87}{Quantidade\+Auditorias}} ()
+\begin{DoxyCompactList}\small\item\em Obtém a quantidade de auditorias \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a4891cd669a3092c3f830cc82276b6083}{Adiciona\+Vulnerabilidade}} (int cod, int codv)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova vulnerabilidade a uma auditoria \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_afd69b2f3c73a13d75f1ac2c26cb41b76}{Edita\+Auditoria}} (int cod, Date\+Time data\+Registo, int duracao)
+\begin{DoxyCompactList}\small\item\em Edita as informações de uma auditoria \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} $>$ \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_ada28d62bb9620451f9af391ce2a5c48b}{Mostra\+Auditorias}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta informação de auditoria detalhada \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} $>$ \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_ab5274092b336c5b781a5a541a0575e1c}{Apresenta\+Auditorias\+Colaborador}} (int codc)
+\begin{DoxyCompactList}\small\item\em Apresenta detalhes sobre as auditorias de um colaborador \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} $>$ \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_aa268d50d1ec4e14fcb0a5fab3bfa5f61}{Apresenta\+Auditorias\+Ordenadas\+Vuln}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta detalhes sobre as auditorias por ordem decrescente de vulnerabilidades \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a76c487a4fe2db6faeccd45972b863475}{Obter\+Auditoria}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém auditoria completa através do código recebido \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_acab32be1b14019c445b8dc83fe9cd657}{Obter\+Quantidade\+Vulnerabilidades\+Auditoria}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém quantidade de vulnerabilidades em uma auditoria \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_ad427662a622a3658d5f702812187fd20}{Obter\+Auditoria\+Mais\+Vuln}} ()
+\begin{DoxyCompactList}\small\item\em Obtem a auditoria que tem mais vulnerabilidades registadas \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_abc5082738a3de21aa2124e423c441838}{Obter\+Auditoria\+Menos\+Vuln}} ()
+\begin{DoxyCompactList}\small\item\em Obtem a auditoria que tem menos vulnerabilidades registadas \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a2c61267a74a703a958f6b8bde88bcd39}{Obtem\+Media\+Vulns}} ()
+\begin{DoxyCompactList}\small\item\em Obtem a média de vulnerabilidades registadas nas auditorias \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a5fc5c1a88ef3fa92c05a736315965590}{Guardar\+Auditorias}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Auditoria \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a997297c055be6aa08d16e9a4db6b682c}{Carregar\+Auditorias}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Auditoria \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_a4891cd669a3092c3f830cc82276b6083}\label{classa3___dados_classes_1_1_auditorias_a4891cd669a3092c3f830cc82276b6083}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!AdicionaVulnerabilidade@{AdicionaVulnerabilidade}}
+\index{AdicionaVulnerabilidade@{AdicionaVulnerabilidade}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{AdicionaVulnerabilidade()}{AdicionaVulnerabilidade()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Adiciona\+Vulnerabilidade (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{int}]{codv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adiciona uma nova vulnerabilidade a uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de auditoria \\
+\hline
+{\em codv} & Codigo da Vulnerabilidade a adicionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se for adicionada False se não for adicionada
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108         \{}
+\DoxyCodeLine{109             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{110             \{}
+\DoxyCodeLine{111                 \textcolor{keywordflow}{foreach} (AuditoriaCompleta ac \textcolor{keywordflow}{in} aud)}
+\DoxyCodeLine{112                     \textcolor{keywordflow}{if} (cod == ac.a.Codigo)}
+\DoxyCodeLine{113                     \{}
+\DoxyCodeLine{114                         ac.codVulns.Add(codv);}
+\DoxyCodeLine{115                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{116                     \}}
+\DoxyCodeLine{117                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{118             \}}
+\DoxyCodeLine{119             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{120             \{}
+\DoxyCodeLine{121                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{122             \}}
+\DoxyCodeLine{123             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{124             \{}
+\DoxyCodeLine{125                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{126             \}}
+\DoxyCodeLine{127         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_ab5274092b336c5b781a5a541a0575e1c}\label{classa3___dados_classes_1_1_auditorias_ab5274092b336c5b781a5a541a0575e1c}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ApresentaAuditoriasColaborador@{ApresentaAuditoriasColaborador}}
+\index{ApresentaAuditoriasColaborador@{ApresentaAuditoriasColaborador}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ApresentaAuditoriasColaborador()}{ApresentaAuditoriasColaborador()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}}$>$ a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Apresenta\+Auditorias\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{codc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta detalhes sobre as auditorias de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codc} & Codigo da Vulnerabilidade a adicionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se forem apresentadas auditorias False se não forem apresentadas auditorias
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181         \{}
+\DoxyCodeLine{182             var audc = aud.Where(aud => aud.a.CodColab == codc);}
+\DoxyCodeLine{183             \textcolor{keywordflow}{foreach} (AuditoriaCompleta ac \textcolor{keywordflow}{in} audc)}
+\DoxyCodeLine{184             \{}
+\DoxyCodeLine{185                 \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}} aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}(ac.a.Codigo, ac.a.Duracao, ac.a.DataRegisto, ac.a.CodColab, ac.a.CodEqui);}
+\DoxyCodeLine{186                 audAux.Add(aAux);}
+\DoxyCodeLine{187             \}}
+\DoxyCodeLine{188             \textcolor{keywordflow}{if} (audc.Count() == 0)}
+\DoxyCodeLine{189                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{190             \textcolor{keywordflow}{return} audAux;}
+\DoxyCodeLine{191         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_aa268d50d1ec4e14fcb0a5fab3bfa5f61}\label{classa3___dados_classes_1_1_auditorias_aa268d50d1ec4e14fcb0a5fab3bfa5f61}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ApresentaAuditoriasOrdenadasVuln@{ApresentaAuditoriasOrdenadasVuln}}
+\index{ApresentaAuditoriasOrdenadasVuln@{ApresentaAuditoriasOrdenadasVuln}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ApresentaAuditoriasOrdenadasVuln()}{ApresentaAuditoriasOrdenadasVuln()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}}$>$ a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Apresenta\+Auditorias\+Ordenadas\+Vuln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta detalhes sobre as auditorias por ordem decrescente de vulnerabilidades 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{197         \{}
+\DoxyCodeLine{198             var auditoriasOrdenadas = from a in aud}
+\DoxyCodeLine{199                                       orderby a.codVulns.Count descending}
+\DoxyCodeLine{200                                       select a;}
+\DoxyCodeLine{201             \textcolor{keywordflow}{foreach} (AuditoriaCompleta ac \textcolor{keywordflow}{in} auditoriasOrdenadas)}
+\DoxyCodeLine{202             \{}
+\DoxyCodeLine{203                 \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}} aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}(ac.a.Codigo, ac.a.Duracao, ac.a.DataRegisto, ac.a.CodColab, ac.a.CodEqui);}
+\DoxyCodeLine{204                 audAux.Add(aAux);}
+\DoxyCodeLine{205             \}}
+\DoxyCodeLine{206             \textcolor{keywordflow}{if} (auditoriasOrdenadas.Count() == 0)}
+\DoxyCodeLine{207                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{208             \textcolor{keywordflow}{return} audAux;}
+\DoxyCodeLine{209         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_a997297c055be6aa08d16e9a4db6b682c}\label{classa3___dados_classes_1_1_auditorias_a997297c055be6aa08d16e9a4db6b682c}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!CarregarAuditorias@{CarregarAuditorias}}
+\index{CarregarAuditorias@{CarregarAuditorias}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{CarregarAuditorias()}{CarregarAuditorias()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Carregar\+Auditorias (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{306         \{}
+\DoxyCodeLine{307             \textcolor{keywordflow}{if} (File.Exists(fileName))}
+\DoxyCodeLine{308             \{}
+\DoxyCodeLine{309                 \textcolor{keywordflow}{try}}
+\DoxyCodeLine{310                 \{}
+\DoxyCodeLine{311                     Stream stream = File.Open(fileName, FileMode.Open);}
+\DoxyCodeLine{312                     BinaryFormatter bin = \textcolor{keyword}{new} BinaryFormatter();}
+\DoxyCodeLine{313                     aud = (List<AuditoriaCompleta>)bin.Deserialize(stream);}
+\DoxyCodeLine{314                     stream.Close();}
+\DoxyCodeLine{315                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{316                 \}}
+\DoxyCodeLine{317                 \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{318                 \{}
+\DoxyCodeLine{319                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(x.Message);}
+\DoxyCodeLine{320                 \}}
+\DoxyCodeLine{321                 \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{322                 \{}
+\DoxyCodeLine{323                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{324                 \}}
+\DoxyCodeLine{325             \}}
+\DoxyCodeLine{326             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{327         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_afd69b2f3c73a13d75f1ac2c26cb41b76}\label{classa3___dados_classes_1_1_auditorias_afd69b2f3c73a13d75f1ac2c26cb41b76}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!EditaAuditoria@{EditaAuditoria}}
+\index{EditaAuditoria@{EditaAuditoria}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{EditaAuditoria()}{EditaAuditoria()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Edita\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{Date\+Time}]{data\+Registo,  }\item[{int}]{duracao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código da auditoria a editar\\
+\hline
+{\em data\+Registo} & Nova data de Registo\\
+\hline
+{\em duracao} & Nova duração\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138         \{}
+\DoxyCodeLine{139             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{140             \{}
+\DoxyCodeLine{141                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_acf9d1976b629df08d7ead98e1cb90ec3}{ExisteAuditoria}}(cod) == \textcolor{keyword}{false}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{142                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < aud.Count; i++)}
+\DoxyCodeLine{143                     \textcolor{keywordflow}{if} (aud[i].a.Codigo == cod)}
+\DoxyCodeLine{144                     \{}
+\DoxyCodeLine{145                         aud[i].a.DataRegisto = dataRegisto;}
+\DoxyCodeLine{146                         aud[i].a.Duracao = duracao;}
+\DoxyCodeLine{147                     \}}
+\DoxyCodeLine{148                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{149             \}}
+\DoxyCodeLine{150             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{151             \{}
+\DoxyCodeLine{152                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{153             \}}
+\DoxyCodeLine{154             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{155             \{}
+\DoxyCodeLine{156                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{157             \}}
+\DoxyCodeLine{158         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_acf9d1976b629df08d7ead98e1cb90ec3}\label{classa3___dados_classes_1_1_auditorias_acf9d1976b629df08d7ead98e1cb90ec3}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ExisteAuditoria@{ExisteAuditoria}}
+\index{ExisteAuditoria@{ExisteAuditoria}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ExisteAuditoria()}{ExisteAuditoria()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Existe\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se existe determinada auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de auditoria \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se existir False se não existir
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} aud.Exists(a => a.a.Codigo == cod);}
+\DoxyCodeLine{89         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_a5fc5c1a88ef3fa92c05a736315965590}\label{classa3___dados_classes_1_1_auditorias_a5fc5c1a88ef3fa92c05a736315965590}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!GuardarAuditorias@{GuardarAuditorias}}
+\index{GuardarAuditorias@{GuardarAuditorias}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{GuardarAuditorias()}{GuardarAuditorias()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Guardar\+Auditorias (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{282         \{}
+\DoxyCodeLine{283             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{284             \{}
+\DoxyCodeLine{285                 Stream stream = File.Open(fileName, FileMode.Create);}
+\DoxyCodeLine{286                 BinaryFormatter bin = \textcolor{keyword}{new} BinaryFormatter();}
+\DoxyCodeLine{287                 bin.Serialize(stream, aud);}
+\DoxyCodeLine{288                 stream.Close();}
+\DoxyCodeLine{289                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{290             \}}
+\DoxyCodeLine{291             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{292             \{}
+\DoxyCodeLine{293                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(x.Message);}
+\DoxyCodeLine{294             \}}
+\DoxyCodeLine{295             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{296             \{}
+\DoxyCodeLine{297                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{298             \}}
+\DoxyCodeLine{299         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_ada28d62bb9620451f9af391ce2a5c48b}\label{classa3___dados_classes_1_1_auditorias_ada28d62bb9620451f9af391ce2a5c48b}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!MostraAuditorias@{MostraAuditorias}}
+\index{MostraAuditorias@{MostraAuditorias}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{MostraAuditorias()}{MostraAuditorias()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}}$>$ a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Mostra\+Auditorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta informação de auditoria detalhada 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Auditoria Completa \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165         \{}
+\DoxyCodeLine{166             \textcolor{keywordflow}{foreach} (AuditoriaCompleta ac \textcolor{keywordflow}{in} aud)}
+\DoxyCodeLine{167             \{}
+\DoxyCodeLine{168                 \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}} aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}(ac.a.Codigo, ac.a.Duracao, ac.a.DataRegisto, ac.a.CodColab, ac.a.CodEqui);}
+\DoxyCodeLine{169                 audAux.Add(aAux);}
+\DoxyCodeLine{170             \}}
+\DoxyCodeLine{171             \textcolor{keywordflow}{return} audAux;}
+\DoxyCodeLine{172         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_a2c61267a74a703a958f6b8bde88bcd39}\label{classa3___dados_classes_1_1_auditorias_a2c61267a74a703a958f6b8bde88bcd39}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ObtemMediaVulns@{ObtemMediaVulns}}
+\index{ObtemMediaVulns@{ObtemMediaVulns}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ObtemMediaVulns()}{ObtemMediaVulns()}}
+{\footnotesize\ttfamily static double a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Obtem\+Media\+Vulns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtem a média de vulnerabilidades registadas nas auditorias 
+
+\begin{DoxyReturn}{Returns}
+Media de vulnerabilidades registadas
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272         \{}
+\DoxyCodeLine{273             \textcolor{keywordtype}{double} media = (from a in aud select a.codVulns.Count).Average();}
+\DoxyCodeLine{274             \textcolor{keywordflow}{return} media;}
+\DoxyCodeLine{275         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_a76c487a4fe2db6faeccd45972b863475}\label{classa3___dados_classes_1_1_auditorias_a76c487a4fe2db6faeccd45972b863475}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ObterAuditoria@{ObterAuditoria}}
+\index{ObterAuditoria@{ObterAuditoria}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ObterAuditoria()}{ObterAuditoria()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Obter\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém auditoria completa através do código recebido 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código da auditoria\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve auditoria completa
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{217         \{}
+\DoxyCodeLine{218             \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}} aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}();}
+\DoxyCodeLine{219             \textcolor{keywordflow}{foreach} (AuditoriaCompleta ac \textcolor{keywordflow}{in} aud)}
+\DoxyCodeLine{220                 \textcolor{keywordflow}{if} (ac.a.Codigo == cod)}
+\DoxyCodeLine{221                 \{}
+\DoxyCodeLine{222                     aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}(ac.a.Codigo, ac.a.Duracao, ac.a.DataRegisto, ac.a.CodColab, ac.a.CodEqui);}
+\DoxyCodeLine{223                     \textcolor{keywordflow}{return} aAux;}
+\DoxyCodeLine{224                 \}}
+\DoxyCodeLine{225             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{226         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_ad427662a622a3658d5f702812187fd20}\label{classa3___dados_classes_1_1_auditorias_ad427662a622a3658d5f702812187fd20}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ObterAuditoriaMaisVuln@{ObterAuditoriaMaisVuln}}
+\index{ObterAuditoriaMaisVuln@{ObterAuditoriaMaisVuln}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ObterAuditoriaMaisVuln()}{ObterAuditoriaMaisVuln()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Obter\+Auditoria\+Mais\+Vuln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtem a auditoria que tem mais vulnerabilidades registadas 
+
+\begin{DoxyReturn}{Returns}
+Auditoria com mais vulnerabilidades
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246         \{}
+\DoxyCodeLine{247             var auditoriasOrdenadas = from a in aud}
+\DoxyCodeLine{248                                       orderby a.codVulns.Count descending}
+\DoxyCodeLine{249                                       select a;}
+\DoxyCodeLine{250             \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}} aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}(auditoriasOrdenadas.First().a.Codigo, auditoriasOrdenadas.First().a.Duracao, auditoriasOrdenadas.First().a.DataRegisto, auditoriasOrdenadas.First().a.CodColab, auditoriasOrdenadas.First().a.CodEqui);}
+\DoxyCodeLine{251             \textcolor{keywordflow}{return} aAux;}
+\DoxyCodeLine{252         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_abc5082738a3de21aa2124e423c441838}\label{classa3___dados_classes_1_1_auditorias_abc5082738a3de21aa2124e423c441838}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ObterAuditoriaMenosVuln@{ObterAuditoriaMenosVuln}}
+\index{ObterAuditoriaMenosVuln@{ObterAuditoriaMenosVuln}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ObterAuditoriaMenosVuln()}{ObterAuditoriaMenosVuln()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Obter\+Auditoria\+Menos\+Vuln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtem a auditoria que tem menos vulnerabilidades registadas 
+
+\begin{DoxyReturn}{Returns}
+Auditoria com menos vulnerabilidades
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{259         \{}
+\DoxyCodeLine{260             var auditoriasOrdenadas = from a in aud}
+\DoxyCodeLine{261                                       orderby a.codVulns.Count ascending}
+\DoxyCodeLine{262                                       select a;}
+\DoxyCodeLine{263             \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}} aAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{AuditoriaAux}}(auditoriasOrdenadas.First().a.Codigo, auditoriasOrdenadas.First().a.Duracao, auditoriasOrdenadas.First().a.DataRegisto, auditoriasOrdenadas.First().a.CodColab, auditoriasOrdenadas.First().a.CodEqui);}
+\DoxyCodeLine{264             \textcolor{keywordflow}{return} aAux;}
+\DoxyCodeLine{265         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_acab32be1b14019c445b8dc83fe9cd657}\label{classa3___dados_classes_1_1_auditorias_acab32be1b14019c445b8dc83fe9cd657}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!ObterQuantidadeVulnerabilidadesAuditoria@{ObterQuantidadeVulnerabilidadesAuditoria}}
+\index{ObterQuantidadeVulnerabilidadesAuditoria@{ObterQuantidadeVulnerabilidadesAuditoria}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{ObterQuantidadeVulnerabilidadesAuditoria()}{ObterQuantidadeVulnerabilidadesAuditoria()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Obter\+Quantidade\+Vulnerabilidades\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém quantidade de vulnerabilidades em uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código de auditoria\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantidade de vulnerabilidades da auditoria
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{234         \{}
+\DoxyCodeLine{235             \textcolor{keywordflow}{foreach} (AuditoriaCompleta ac \textcolor{keywordflow}{in} aud)}
+\DoxyCodeLine{236                 \textcolor{keywordflow}{if} (ac.a.Codigo == cod)}
+\DoxyCodeLine{237                     \textcolor{keywordflow}{return} ac.codVulns.Count;}
+\DoxyCodeLine{238             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{239         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_aa71191f8cf4cfc450cce22c242e21c87}\label{classa3___dados_classes_1_1_auditorias_aa71191f8cf4cfc450cce22c242e21c87}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!QuantidadeAuditorias@{QuantidadeAuditorias}}
+\index{QuantidadeAuditorias@{QuantidadeAuditorias}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{QuantidadeAuditorias()}{QuantidadeAuditorias()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Quantidade\+Auditorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém a quantidade de auditorias 
+
+\begin{DoxyReturn}{Returns}
+Devolve a quantidade de auditorias
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96         \{}
+\DoxyCodeLine{97             \textcolor{keywordflow}{return} aud.Count;}
+\DoxyCodeLine{98         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_auditorias_afc0eb7a262b4f0690cc53a364e5d1c32}\label{classa3___dados_classes_1_1_auditorias_afc0eb7a262b4f0690cc53a364e5d1c32}} 
+\index{a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}!RegistaAuditoria@{RegistaAuditoria}}
+\index{RegistaAuditoria@{RegistaAuditoria}!a3\_DadosClasses.Auditorias@{a3\_DadosClasses.Auditorias}}
+\doxysubsubsection{\texorpdfstring{RegistaAuditoria()}{RegistaAuditoria()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Auditorias.\+Regista\+Auditoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria}{Auditoria}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Auditoria Completa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a.\+Codigo se a auditoria for inserida 0 se não for inserida a auditoria
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61         \{}
+\DoxyCodeLine{62             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{63             \{}
+\DoxyCodeLine{64                 AuditoriaCompleta ac = \textcolor{keyword}{new} AuditoriaCompleta(a);}
+\DoxyCodeLine{65                 ac.a.Codigo = aud.Count + 1;}
+\DoxyCodeLine{66                 \textcolor{keywordflow}{if} (aud.Contains(ac) == \textcolor{keyword}{true}) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{67                 aud.Add(ac);}
+\DoxyCodeLine{68                 \textcolor{keywordflow}{return} ac.a.Codigo;}
+\DoxyCodeLine{69             \}}
+\DoxyCodeLine{70             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{71             \{}
+\DoxyCodeLine{72                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{73             \}}
+\DoxyCodeLine{74             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{75             \{}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{77             \}}
+\DoxyCodeLine{78         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a3\+\_\+\+Dados\+Classes/\mbox{\hyperlink{a3___dados_classes_2_auditorias_8cs}{Auditorias.\+cs}}\end{DoxyCompactItemize}

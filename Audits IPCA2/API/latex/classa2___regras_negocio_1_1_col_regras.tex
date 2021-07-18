@@ -1,0 +1,348 @@
+\hypertarget{classa2___regras_negocio_1_1_col_regras}{}\doxysection{a2\+\_\+\+Regras\+Negocio.\+Col\+Regras Class Reference}
+\label{classa2___regras_negocio_1_1_col_regras}\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a7e98e2590dbf13780a4c9f85bcf3890e}{Regista\+Colaborador}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}} c)
+\begin{DoxyCompactList}\small\item\em Regista um Colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a775cd4f0afb281ec7237cbdd1ee57468}{Edita\+Colaborador}} (int cod, string nome, int idade, \mbox{\hyperlink{namespacec1___objetos_negocio_a06e841d65a0a7ed50b39dcdb60a5066e}{Genero}} genero, int nif)
+\begin{DoxyCompactList}\small\item\em Edita as informações de um colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a91004f3c63612437fe7e035297e882a5}{Existe\+Colaborador}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica se existe colaborador através do seu código \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a368918e19b4a810c4bb7b9c8ee01ce95}{Pesquisa\+Colaborador}} (int nif)
+\begin{DoxyCompactList}\small\item\em Procura um colaborador pelo Nif e devolve o seu código \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a8eade5e26e8fad1bb2cdac18bbce7f59}{Adiciona\+Auditoria\+Colaborador}} (int cod)
+\begin{DoxyCompactList}\small\item\em Incrementa a quantidade de auditorias de um colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a9c105e3b3dcdc2f85bae61f8538da4fc}{Tornar\+Colaborador\+Inativo}} (int cod)
+\begin{DoxyCompactList}\small\item\em Torna um colaborador Inativo \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a6dd4d30ececf4f3e05e449a885feba1e}{Verifica\+Atividade}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica o estado de atividade de um colaborador \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_aux}{Colaborador\+Aux}} $>$ \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a760cb310f6f959ea03895dc9f136476b}{Mostra\+Colaboradores}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta informação dos colaboradores \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_ab4f0ad391ce851eb4be820dfbd0f2e98}{Guardar\+Colaboradores}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_col_regras_a1dffa839a392cfdfc35338650e3d61bc}{Carregar\+Colaboradores}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Colaborador \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a8eade5e26e8fad1bb2cdac18bbce7f59}\label{classa2___regras_negocio_1_1_col_regras_a8eade5e26e8fad1bb2cdac18bbce7f59}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!AdicionaAuditoriaColaborador@{AdicionaAuditoriaColaborador}}
+\index{AdicionaAuditoriaColaborador@{AdicionaAuditoriaColaborador}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{AdicionaAuditoriaColaborador()}{AdicionaAuditoriaColaborador()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Adiciona\+Auditoria\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Incrementa a quantidade de auditorias de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se for incrementado corretamente false se não for encontrado o colaborador
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109         \{}
+\DoxyCodeLine{110             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{111             \{}
+\DoxyCodeLine{112                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_ad9962fcac45a0d2be20b0d9ae59be712}{AdicionaAuditoriaColaborador}}(cod);}
+\DoxyCodeLine{113             \}}
+\DoxyCodeLine{114             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{115             \{}
+\DoxyCodeLine{116                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{117             \}}
+\DoxyCodeLine{118             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{119             \{}
+\DoxyCodeLine{120                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{121             \}}
+\DoxyCodeLine{122         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a1dffa839a392cfdfc35338650e3d61bc}\label{classa2___regras_negocio_1_1_col_regras_a1dffa839a392cfdfc35338650e3d61bc}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!CarregarColaboradores@{CarregarColaboradores}}
+\index{CarregarColaboradores@{CarregarColaboradores}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{CarregarColaboradores()}{CarregarColaboradores()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Carregar\+Colaboradores (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191         \{}
+\DoxyCodeLine{192             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{193             \{}
+\DoxyCodeLine{194                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a0bf18acef3f648b9091d6051e2ed3f45}{CarregarColaboradores}}(fileName);}
+\DoxyCodeLine{195             \}}
+\DoxyCodeLine{196             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{197             \{}
+\DoxyCodeLine{198                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{199             \}}
+\DoxyCodeLine{200             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{201             \{}
+\DoxyCodeLine{202                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{203             \}}
+\DoxyCodeLine{204         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a775cd4f0afb281ec7237cbdd1ee57468}\label{classa2___regras_negocio_1_1_col_regras_a775cd4f0afb281ec7237cbdd1ee57468}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!EditaColaborador@{EditaColaborador}}
+\index{EditaColaborador@{EditaColaborador}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{EditaColaborador()}{EditaColaborador()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Edita\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{string}]{nome,  }\item[{int}]{idade,  }\item[{\mbox{\hyperlink{namespacec1___objetos_negocio_a06e841d65a0a7ed50b39dcdb60a5066e}{Genero}}}]{genero,  }\item[{int}]{nif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código do colaborador a editar\\
+\hline
+{\em nome} & Novo nome do colaborador\\
+\hline
+{\em idade} & Nova idade do colaborador\\
+\hline
+{\em genero} & Novo género do colaborador\\
+\hline
+{\em nif} & Novo nif do colaborador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{67             \{}
+\DoxyCodeLine{68                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a3cabf76a4ae420adc89a82c192ecdda7}{EditaColaborador}}(cod, nome, idade, genero, nif);}
+\DoxyCodeLine{69             \}}
+\DoxyCodeLine{70             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{71             \{}
+\DoxyCodeLine{72                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{73             \}}
+\DoxyCodeLine{74             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{75             \{}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{77             \}}
+\DoxyCodeLine{78         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a91004f3c63612437fe7e035297e882a5}\label{classa2___regras_negocio_1_1_col_regras_a91004f3c63612437fe7e035297e882a5}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!ExisteColaborador@{ExisteColaborador}}
+\index{ExisteColaborador@{ExisteColaborador}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{ExisteColaborador()}{ExisteColaborador()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Existe\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se existe colaborador através do seu código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se existir colaborador False se não existir
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a3a84a0cad2cd1d8caf56a348f796af64}{ExisteColaborador}}(cod);}
+\DoxyCodeLine{89         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_ab4f0ad391ce851eb4be820dfbd0f2e98}\label{classa2___regras_negocio_1_1_col_regras_ab4f0ad391ce851eb4be820dfbd0f2e98}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!GuardarColaboradores@{GuardarColaboradores}}
+\index{GuardarColaboradores@{GuardarColaboradores}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{GuardarColaboradores()}{GuardarColaboradores()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Guardar\+Colaboradores (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171         \{}
+\DoxyCodeLine{172             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{173             \{}
+\DoxyCodeLine{174                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a170538943b40d6257bd008e15e6409b1}{GuardarColaboradores}}(fileName);}
+\DoxyCodeLine{175             \}}
+\DoxyCodeLine{176             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{177             \{}
+\DoxyCodeLine{178                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{179             \}}
+\DoxyCodeLine{180             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{181             \{}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{183             \}}
+\DoxyCodeLine{184         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a760cb310f6f959ea03895dc9f136476b}\label{classa2___regras_negocio_1_1_col_regras_a760cb310f6f959ea03895dc9f136476b}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!MostraColaboradores@{MostraColaboradores}}
+\index{MostraColaboradores@{MostraColaboradores}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{MostraColaboradores()}{MostraColaboradores()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_aux}{Colaborador\+Aux}}$>$ a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Mostra\+Colaboradores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta informação dos colaboradores 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Auditoria Completa \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162         \{}
+\DoxyCodeLine{163             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_afa52c5e6ba703e204f8653a82acbefd1}{MostraColaboradores}}();}
+\DoxyCodeLine{164         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a368918e19b4a810c4bb7b9c8ee01ce95}\label{classa2___regras_negocio_1_1_col_regras_a368918e19b4a810c4bb7b9c8ee01ce95}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!PesquisaColaborador@{PesquisaColaborador}}
+\index{PesquisaColaborador@{PesquisaColaborador}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{PesquisaColaborador()}{PesquisaColaborador()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Pesquisa\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{nif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Procura um colaborador pelo Nif e devolve o seu código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nif} & Nif do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+c.\+Codigo se for encontrado o colaborador 0 se não for encontrado o colaborador
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98         \{}
+\DoxyCodeLine{99             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a6c6e038beebe73aec3b3d383ddddeaa4}{PesquisaColaborador}}(nif);}
+\DoxyCodeLine{100         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a7e98e2590dbf13780a4c9f85bcf3890e}\label{classa2___regras_negocio_1_1_col_regras_a7e98e2590dbf13780a4c9f85bcf3890e}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!RegistaColaborador@{RegistaColaborador}}
+\index{RegistaColaborador@{RegistaColaborador}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{RegistaColaborador()}{RegistaColaborador()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Regista\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista um Colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Colaborador Completo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existir esse colaborador true se for inserido o colaborador
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39         \{}
+\DoxyCodeLine{40             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{41             \{}
+\DoxyCodeLine{42                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_af7c8a5361cb1aeb07f183232e605feeb}{RegistaColaborador}}(c);}
+\DoxyCodeLine{43             \}}
+\DoxyCodeLine{44             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{45             \{}
+\DoxyCodeLine{46                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{47             \}}
+\DoxyCodeLine{48             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{49             \{}
+\DoxyCodeLine{50                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{51             \}}
+\DoxyCodeLine{52         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a9c105e3b3dcdc2f85bae61f8538da4fc}\label{classa2___regras_negocio_1_1_col_regras_a9c105e3b3dcdc2f85bae61f8538da4fc}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!TornarColaboradorInativo@{TornarColaboradorInativo}}
+\index{TornarColaboradorInativo@{TornarColaboradorInativo}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{TornarColaboradorInativo()}{TornarColaboradorInativo()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Tornar\+Colaborador\+Inativo (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Torna um colaborador Inativo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se tornar um colaborador inativo False se não tornar um colaborador inativo
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131         \{}
+\DoxyCodeLine{132             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{133             \{}
+\DoxyCodeLine{134                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_ab0fb33a61c7830b8d0de80c15fcb820f}{TornarColaboradorInativo}}(cod);}
+\DoxyCodeLine{135             \}}
+\DoxyCodeLine{136             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{137             \{}
+\DoxyCodeLine{138                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{139             \}}
+\DoxyCodeLine{140             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{141             \{}
+\DoxyCodeLine{142                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{143             \}}
+\DoxyCodeLine{144         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_col_regras_a6dd4d30ececf4f3e05e449a885feba1e}\label{classa2___regras_negocio_1_1_col_regras_a6dd4d30ececf4f3e05e449a885feba1e}} 
+\index{a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}!VerificaAtividade@{VerificaAtividade}}
+\index{VerificaAtividade@{VerificaAtividade}!a2\_RegrasNegocio.ColRegras@{a2\_RegrasNegocio.ColRegras}}
+\doxysubsubsection{\texorpdfstring{VerificaAtividade()}{VerificaAtividade()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Col\+Regras.\+Verifica\+Atividade (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica o estado de atividade de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo do colaborador em questão \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se estiver Ativo False se estiver Inativo 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153         \{}
+\DoxyCodeLine{154             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores}{Colaboradores}}.\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a469d2fe41ec9e2bcc50faa905e135cad}{VerificaAtividade}}(cod);}
+\DoxyCodeLine{155         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a2\+\_\+\+Regras\+Negocio/\mbox{\hyperlink{a2___regras_negocio_2_colaboradores_8cs}{Colaboradores.\+cs}}\end{DoxyCompactItemize}

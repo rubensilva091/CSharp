@@ -1,0 +1,394 @@
+\hypertarget{classa3___dados_classes_1_1_colaboradores}{}\doxysection{a3\+\_\+\+Dados\+Classes.\+Colaboradores Class Reference}
+\label{classa3___dados_classes_1_1_colaboradores}\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+Inheritance diagram for a3\+\_\+\+Dados\+Classes.\+Colaboradores\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classa3___dados_classes_1_1_colaboradores}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_af7c8a5361cb1aeb07f183232e605feeb}{Regista\+Colaborador}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}} c)
+\begin{DoxyCompactList}\small\item\em Regista um Colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a3cabf76a4ae420adc89a82c192ecdda7}{Edita\+Colaborador}} (int cod, string nome, int idade, \mbox{\hyperlink{namespacec1___objetos_negocio_a06e841d65a0a7ed50b39dcdb60a5066e}{Genero}} genero, int nif)
+\begin{DoxyCompactList}\small\item\em Edita as informações de um colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a3a84a0cad2cd1d8caf56a348f796af64}{Existe\+Colaborador}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica se existe colaborador através do seu código \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a6c6e038beebe73aec3b3d383ddddeaa4}{Pesquisa\+Colaborador}} (int nif)
+\begin{DoxyCompactList}\small\item\em Procura um colaborador pelo Nif e devolve o seu código \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_ad9962fcac45a0d2be20b0d9ae59be712}{Adiciona\+Auditoria\+Colaborador}} (int cod)
+\begin{DoxyCompactList}\small\item\em Incrementa a quantidade de auditorias de um colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_ab0fb33a61c7830b8d0de80c15fcb820f}{Tornar\+Colaborador\+Inativo}} (int cod)
+\begin{DoxyCompactList}\small\item\em Torna um colaborador Inativo \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a469d2fe41ec9e2bcc50faa905e135cad}{Verifica\+Atividade}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica o estado de atividade de um colaborador \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_aux}{Colaborador\+Aux}} $>$ \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_afa52c5e6ba703e204f8653a82acbefd1}{Mostra\+Colaboradores}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta informação dos colaboradores \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a170538943b40d6257bd008e15e6409b1}{Guardar\+Colaboradores}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Colaborador \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a0bf18acef3f648b9091d6051e2ed3f45}{Carregar\+Colaboradores}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Colaborador \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_ad9962fcac45a0d2be20b0d9ae59be712}\label{classa3___dados_classes_1_1_colaboradores_ad9962fcac45a0d2be20b0d9ae59be712}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!AdicionaAuditoriaColaborador@{AdicionaAuditoriaColaborador}}
+\index{AdicionaAuditoriaColaborador@{AdicionaAuditoriaColaborador}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{AdicionaAuditoriaColaborador()}{AdicionaAuditoriaColaborador()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Adiciona\+Auditoria\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Incrementa a quantidade de auditorias de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se for incrementado corretamente false se não for encontrado o colaborador
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{144         \{}
+\DoxyCodeLine{145             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{146             \{}
+\DoxyCodeLine{147                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a3a84a0cad2cd1d8caf56a348f796af64}{ExisteColaborador}}(cod) == \textcolor{keyword}{false}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{148                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < col.Count; i++)}
+\DoxyCodeLine{149                     \textcolor{keywordflow}{if} (col[i].Codigo == cod)}
+\DoxyCodeLine{150                         col[i].QuantAuds++;}
+\DoxyCodeLine{151                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{154             \{}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{156             \}}
+\DoxyCodeLine{157             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{158             \{}
+\DoxyCodeLine{159                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{160             \}}
+\DoxyCodeLine{161         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_a0bf18acef3f648b9091d6051e2ed3f45}\label{classa3___dados_classes_1_1_colaboradores_a0bf18acef3f648b9091d6051e2ed3f45}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!CarregarColaboradores@{CarregarColaboradores}}
+\index{CarregarColaboradores@{CarregarColaboradores}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{CarregarColaboradores()}{CarregarColaboradores()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Carregar\+Colaboradores (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247         \{}
+\DoxyCodeLine{248             \textcolor{keywordflow}{if} (File.Exists(fileName))}
+\DoxyCodeLine{249             \{}
+\DoxyCodeLine{250                 \textcolor{keywordflow}{try}}
+\DoxyCodeLine{251                 \{}
+\DoxyCodeLine{252                     Stream stream = File.Open(fileName, FileMode.Open);}
+\DoxyCodeLine{253                     BinaryFormatter bin = \textcolor{keyword}{new} BinaryFormatter();}
+\DoxyCodeLine{254                     col = (List<Colaborador>)bin.Deserialize(stream);}
+\DoxyCodeLine{255                     stream.Close();}
+\DoxyCodeLine{256                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{257                 \}}
+\DoxyCodeLine{258                 \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{259                 \{}
+\DoxyCodeLine{260                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(x.Message);}
+\DoxyCodeLine{261                 \}}
+\DoxyCodeLine{262                 \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{263                 \{}
+\DoxyCodeLine{264                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{265                 \}}
+\DoxyCodeLine{266             \}}
+\DoxyCodeLine{267             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{268         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_a3cabf76a4ae420adc89a82c192ecdda7}\label{classa3___dados_classes_1_1_colaboradores_a3cabf76a4ae420adc89a82c192ecdda7}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!EditaColaborador@{EditaColaborador}}
+\index{EditaColaborador@{EditaColaborador}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{EditaColaborador()}{EditaColaborador()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Edita\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{string}]{nome,  }\item[{int}]{idade,  }\item[{\mbox{\hyperlink{namespacec1___objetos_negocio_a06e841d65a0a7ed50b39dcdb60a5066e}{Genero}}}]{genero,  }\item[{int}]{nif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código do colaborador a editar\\
+\hline
+{\em nome} & Novo nome do colaborador\\
+\hline
+{\em idade} & Nova idade do colaborador\\
+\hline
+{\em genero} & Novo género do colaborador\\
+\hline
+{\em nif} & Novo nif do colaborador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89         \{}
+\DoxyCodeLine{90             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{91             \{}
+\DoxyCodeLine{92                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a3a84a0cad2cd1d8caf56a348f796af64}{ExisteColaborador}}(cod) == \textcolor{keyword}{false}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < col.Count; i++)}
+\DoxyCodeLine{94                     \textcolor{keywordflow}{if} (col[i].Codigo == cod)}
+\DoxyCodeLine{95                     \{}
+\DoxyCodeLine{96                         col[i].Nome = nome;}
+\DoxyCodeLine{97                         col[i].Idade = idade;}
+\DoxyCodeLine{98                         col[i].Genero = genero;}
+\DoxyCodeLine{99                         col[i].Nif = nif;}
+\DoxyCodeLine{100                     \}}
+\DoxyCodeLine{101                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{102             \}}
+\DoxyCodeLine{103             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{104             \{}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{108             \{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{110             \}}
+\DoxyCodeLine{111         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_a3a84a0cad2cd1d8caf56a348f796af64}\label{classa3___dados_classes_1_1_colaboradores_a3a84a0cad2cd1d8caf56a348f796af64}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!ExisteColaborador@{ExisteColaborador}}
+\index{ExisteColaborador@{ExisteColaborador}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{ExisteColaborador()}{ExisteColaborador()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Existe\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se existe colaborador através do seu código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se existir colaborador False se não existir
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{120         \{}
+\DoxyCodeLine{121             \textcolor{keywordflow}{return} col.Exists(c => c.Codigo == cod);}
+\DoxyCodeLine{122         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_a170538943b40d6257bd008e15e6409b1}\label{classa3___dados_classes_1_1_colaboradores_a170538943b40d6257bd008e15e6409b1}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!GuardarColaboradores@{GuardarColaboradores}}
+\index{GuardarColaboradores@{GuardarColaboradores}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{GuardarColaboradores()}{GuardarColaboradores()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Guardar\+Colaboradores (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{223         \{}
+\DoxyCodeLine{224             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{225             \{}
+\DoxyCodeLine{226                 Stream stream = File.Open(fileName, FileMode.Create);}
+\DoxyCodeLine{227                 BinaryFormatter bin = \textcolor{keyword}{new} BinaryFormatter();}
+\DoxyCodeLine{228                 bin.Serialize(stream, col);}
+\DoxyCodeLine{229                 stream.Close();}
+\DoxyCodeLine{230                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{231             \}}
+\DoxyCodeLine{232             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{233             \{}
+\DoxyCodeLine{234                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(x.Message);}
+\DoxyCodeLine{235             \}}
+\DoxyCodeLine{236             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{237             \{}
+\DoxyCodeLine{238                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{239             \}}
+\DoxyCodeLine{240         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_afa52c5e6ba703e204f8653a82acbefd1}\label{classa3___dados_classes_1_1_colaboradores_afa52c5e6ba703e204f8653a82acbefd1}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!MostraColaboradores@{MostraColaboradores}}
+\index{MostraColaboradores@{MostraColaboradores}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{MostraColaboradores()}{MostraColaboradores()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_aux}{Colaborador\+Aux}}$>$ a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Mostra\+Colaboradores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta informação dos colaboradores 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{209         \{}
+\DoxyCodeLine{210             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}} c \textcolor{keywordflow}{in} col)}
+\DoxyCodeLine{211             \{}
+\DoxyCodeLine{212                 \mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_aux}{ColaboradorAux}} cAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_aux}{ColaboradorAux}}(c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a3a1481c9036a520d7c3d2c729e532221}{Codigo}}, c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a47efc7af21979c80c58e1b9642c3ef2a}{Atividade}}, c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_pessoa_aae63ffa5222ca9de110a703961634256}{Nome}}, c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_pessoa_ac399b0e3af570b6e86c138d11125f70f}{Genero}}, c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_pessoa_a40820b213471c8ad7d42c33aba15a5a5}{Idade}}, c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_pessoa_aec5ad97e29e7ab915343eac8b6edb676}{Nif}});}
+\DoxyCodeLine{213                 colAux.Add(cAux);}
+\DoxyCodeLine{214             \}}
+\DoxyCodeLine{215             \textcolor{keywordflow}{return} colAux;}
+\DoxyCodeLine{216         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_a6c6e038beebe73aec3b3d383ddddeaa4}\label{classa3___dados_classes_1_1_colaboradores_a6c6e038beebe73aec3b3d383ddddeaa4}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!PesquisaColaborador@{PesquisaColaborador}}
+\index{PesquisaColaborador@{PesquisaColaborador}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{PesquisaColaborador()}{PesquisaColaborador()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Pesquisa\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{nif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Procura um colaborador pelo Nif e devolve o seu código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nif} & Nif do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+c.\+Codigo se for encontrado o colaborador 0 se não for encontrado o colaborador
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131         \{}
+\DoxyCodeLine{132             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}} c \textcolor{keywordflow}{in} col)}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{if} (c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_pessoa_aec5ad97e29e7ab915343eac8b6edb676}{Nif}} == nif) \textcolor{keywordflow}{return} c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a3a1481c9036a520d7c3d2c729e532221}{Codigo}};}
+\DoxyCodeLine{134             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{135         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_af7c8a5361cb1aeb07f183232e605feeb}\label{classa3___dados_classes_1_1_colaboradores_af7c8a5361cb1aeb07f183232e605feeb}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!RegistaColaborador@{RegistaColaborador}}
+\index{RegistaColaborador@{RegistaColaborador}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{RegistaColaborador()}{RegistaColaborador()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Regista\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista um Colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Colaborador Completo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existir esse colaborador true se for inserido o colaborador
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{62             \{}
+\DoxyCodeLine{63                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classa3___dados_classes_1_1_colaboradores_a6c6e038beebe73aec3b3d383ddddeaa4}{PesquisaColaborador}}(c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_pessoa_aec5ad97e29e7ab915343eac8b6edb676}{Nif}}) != 0) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{64                 c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a3a1481c9036a520d7c3d2c729e532221}{Codigo}} = (col.Count) + 1;}
+\DoxyCodeLine{65                 col.Add(c);}
+\DoxyCodeLine{66                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{67             \}}
+\DoxyCodeLine{68             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{69             \{}
+\DoxyCodeLine{70                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{73             \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{75             \}}
+\DoxyCodeLine{76         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_ab0fb33a61c7830b8d0de80c15fcb820f}\label{classa3___dados_classes_1_1_colaboradores_ab0fb33a61c7830b8d0de80c15fcb820f}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!TornarColaboradorInativo@{TornarColaboradorInativo}}
+\index{TornarColaboradorInativo@{TornarColaboradorInativo}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{TornarColaboradorInativo()}{TornarColaboradorInativo()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Tornar\+Colaborador\+Inativo (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Torna um colaborador Inativo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo do colaborador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se tornar um colaborador inativo False se não tornar um colaborador inativo
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170         \{}
+\DoxyCodeLine{171             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{172             \{}
+\DoxyCodeLine{173                 \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}} c \textcolor{keywordflow}{in} col)}
+\DoxyCodeLine{174                     \textcolor{keywordflow}{if} (c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a3a1481c9036a520d7c3d2c729e532221}{Codigo}} == cod \&\& c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a47efc7af21979c80c58e1b9642c3ef2a}{Atividade}} == \mbox{\hyperlink{namespacec1___objetos_negocio_a2263d8e0f55063b2a8057476b2773abb}{Atividade}}.ATIVO)}
+\DoxyCodeLine{175                     \{}
+\DoxyCodeLine{176                         c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a47efc7af21979c80c58e1b9642c3ef2a}{Atividade}} = \mbox{\hyperlink{namespacec1___objetos_negocio_a2263d8e0f55063b2a8057476b2773abb}{Atividade}}.INATIVO;}
+\DoxyCodeLine{177                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{178                     \}}
+\DoxyCodeLine{179                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{180             \}}
+\DoxyCodeLine{181             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{182             \{}
+\DoxyCodeLine{183                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{184             \}}
+\DoxyCodeLine{185             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{186             \{}
+\DoxyCodeLine{187                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{188             \}}
+\DoxyCodeLine{189         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_colaboradores_a469d2fe41ec9e2bcc50faa905e135cad}\label{classa3___dados_classes_1_1_colaboradores_a469d2fe41ec9e2bcc50faa905e135cad}} 
+\index{a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}!VerificaAtividade@{VerificaAtividade}}
+\index{VerificaAtividade@{VerificaAtividade}!a3\_DadosClasses.Colaboradores@{a3\_DadosClasses.Colaboradores}}
+\doxysubsubsection{\texorpdfstring{VerificaAtividade()}{VerificaAtividade()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Colaboradores.\+Verifica\+Atividade (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica o estado de atividade de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo do colaborador em questão \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se estiver Ativo False se estiver Inativo 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{198         \{}
+\DoxyCodeLine{199             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador}{Colaborador}} c \textcolor{keywordflow}{in} col)}
+\DoxyCodeLine{200                 \textcolor{keywordflow}{if} (c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a3a1481c9036a520d7c3d2c729e532221}{Codigo}} == cod)}
+\DoxyCodeLine{201                     \textcolor{keywordflow}{if} (c.\mbox{\hyperlink{classc1___objetos_negocio_1_1_colaborador_a47efc7af21979c80c58e1b9642c3ef2a}{Atividade}} == \mbox{\hyperlink{namespacec1___objetos_negocio_a2263d8e0f55063b2a8057476b2773abb}{Atividade}}.ATIVO) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{202             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{203         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a3\+\_\+\+Dados\+Classes/\mbox{\hyperlink{a3___dados_classes_2_colaboradores_8cs}{Colaboradores.\+cs}}\end{DoxyCompactItemize}

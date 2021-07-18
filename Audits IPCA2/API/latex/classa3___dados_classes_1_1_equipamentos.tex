@@ -1,0 +1,389 @@
+\hypertarget{classa3___dados_classes_1_1_equipamentos}{}\doxysection{a3\+\_\+\+Dados\+Classes.\+Equipamentos Class Reference}
+\label{classa3___dados_classes_1_1_equipamentos}\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a05101420d5e914e577ff3f39030aeb4e}{Regista\+Equipamento}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento}{Equipamento}} e)
+\begin{DoxyCompactList}\small\item\em Regista um equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_af60a10e69f07c12df9975871ce36f6fb}{Existe\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica se existe Equipamento através do código \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_aaac5876868ca7ef442d16236d2ae3152}{Edita\+Equipamento}} (int cod, string marca, string modelo, string tipo, Date\+Time data\+Aquisicao)
+\begin{DoxyCompactList}\small\item\em Edita as informações de um equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a53612d081ce04778b8b242e5f7344687}{Adiciona\+Vulnerabilidade\+Equipamento}} (int cod, int codv)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova vulnerabilidade a um equipamento \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}} $>$ \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a8790d7905bf9e7e1175da94c07fd14b3}{Mostra\+Equipamentos}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta informação dos equipamentos \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}} \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_ab252958c5a0f8bbf1c03894bca2f9bcf}{Obter\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém equipamento completo através do código recebido \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_afd1f66bcebe4588f1a26c3c338780feb}{Obter\+Quantidade\+Vulnerabilidades\+Equipamento}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém quantidade de vulnerabilidades num equipamento \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_aac4fdd6b995feeef397f209a2b82c0df}{Obter\+Codigo\+Vulnerabilidade}} (int cod, int pos)
+\begin{DoxyCompactList}\small\item\em Obtém código da vulnerabilidade \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_a6d02e7d48157eee8f8aae8875a5d0b04}{Guardar\+Equipamentos}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Equipamento \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_af38941d77072fa338bcf83066d49f5b5}{Carregar\+Equipamentos}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Equipamento \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_a53612d081ce04778b8b242e5f7344687}\label{classa3___dados_classes_1_1_equipamentos_a53612d081ce04778b8b242e5f7344687}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!AdicionaVulnerabilidadeEquipamento@{AdicionaVulnerabilidadeEquipamento}}
+\index{AdicionaVulnerabilidadeEquipamento@{AdicionaVulnerabilidadeEquipamento}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{AdicionaVulnerabilidadeEquipamento()}{AdicionaVulnerabilidadeEquipamento()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Adiciona\+Vulnerabilidade\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{int}]{codv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adiciona uma nova vulnerabilidade a um equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de equipamento \\
+\hline
+{\em codv} & Codigo da Vulnerabilidade a adicionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se for adicionada False se não for adicionada
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133         \{}
+\DoxyCodeLine{134             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{135             \{}
+\DoxyCodeLine{136                 \textcolor{keywordflow}{foreach} (EquipamentoCompleto ec \textcolor{keywordflow}{in} equ)}
+\DoxyCodeLine{137                     \textcolor{keywordflow}{if} (cod == ec.e.Codigo)}
+\DoxyCodeLine{138                     \{}
+\DoxyCodeLine{139                         ec.codVulns.Add(codv);}
+\DoxyCodeLine{140                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{141                     \}}
+\DoxyCodeLine{142                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{143             \}}
+\DoxyCodeLine{144             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{145             \{}
+\DoxyCodeLine{146                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{147             \}}
+\DoxyCodeLine{148             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{149             \{}
+\DoxyCodeLine{150                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{151             \}}
+\DoxyCodeLine{152         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_af38941d77072fa338bcf83066d49f5b5}\label{classa3___dados_classes_1_1_equipamentos_af38941d77072fa338bcf83066d49f5b5}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!CarregarEquipamentos@{CarregarEquipamentos}}
+\index{CarregarEquipamentos@{CarregarEquipamentos}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{CarregarEquipamentos()}{CarregarEquipamentos()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Carregar\+Equipamentos (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{240         \{}
+\DoxyCodeLine{241             \textcolor{keywordflow}{if} (File.Exists(fileName))}
+\DoxyCodeLine{242             \{}
+\DoxyCodeLine{243                 \textcolor{keywordflow}{try}}
+\DoxyCodeLine{244                 \{}
+\DoxyCodeLine{245                     Stream stream = File.Open(fileName, FileMode.Open);}
+\DoxyCodeLine{246                     BinaryFormatter bin = \textcolor{keyword}{new} BinaryFormatter();}
+\DoxyCodeLine{247                     equ = (List<EquipamentoCompleto>)bin.Deserialize(stream);}
+\DoxyCodeLine{248                     stream.Close();}
+\DoxyCodeLine{249                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{250                 \}}
+\DoxyCodeLine{251                 \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{252                 \{}
+\DoxyCodeLine{253                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(x.Message);}
+\DoxyCodeLine{254                 \}}
+\DoxyCodeLine{255                 \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{256                 \{}
+\DoxyCodeLine{257                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{258                 \}}
+\DoxyCodeLine{259             \}}
+\DoxyCodeLine{260             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{261         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_aaac5876868ca7ef442d16236d2ae3152}\label{classa3___dados_classes_1_1_equipamentos_aaac5876868ca7ef442d16236d2ae3152}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!EditaEquipamento@{EditaEquipamento}}
+\index{EditaEquipamento@{EditaEquipamento}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{EditaEquipamento()}{EditaEquipamento()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Edita\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{string}]{marca,  }\item[{string}]{modelo,  }\item[{string}]{tipo,  }\item[{Date\+Time}]{data\+Aquisicao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de um equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código do equipamento a editar\\
+\hline
+{\em marca} & Nova marca do equipamento\\
+\hline
+{\em modelo} & Novo modelo do equipamento\\
+\hline
+{\em tipo} & Novo tipo do equipamento\\
+\hline
+{\em data\+Aquisicao} & Nova data de aquisição do Equipamento\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{103             \{}
+\DoxyCodeLine{104                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_af60a10e69f07c12df9975871ce36f6fb}{ExisteEquipamento}}(cod) == \textcolor{keyword}{false}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < equ.Count; i++)}
+\DoxyCodeLine{106                     \textcolor{keywordflow}{if} (equ[i].e.Codigo == cod)}
+\DoxyCodeLine{107                     \{}
+\DoxyCodeLine{108                         equ[i].e.DataAquisicao = dataAquisicao;}
+\DoxyCodeLine{109                         equ[i].e.Marca = marca;}
+\DoxyCodeLine{110                         equ[i].e.Modelo = modelo;}
+\DoxyCodeLine{111                         equ[i].e.Tipo = tipo;}
+\DoxyCodeLine{112                     \}}
+\DoxyCodeLine{113                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{114             \}}
+\DoxyCodeLine{115             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{116             \{}
+\DoxyCodeLine{117                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{118             \}}
+\DoxyCodeLine{119             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{120             \{}
+\DoxyCodeLine{121                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{122             \}}
+\DoxyCodeLine{123         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_af60a10e69f07c12df9975871ce36f6fb}\label{classa3___dados_classes_1_1_equipamentos_af60a10e69f07c12df9975871ce36f6fb}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!ExisteEquipamento@{ExisteEquipamento}}
+\index{ExisteEquipamento@{ExisteEquipamento}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{ExisteEquipamento()}{ExisteEquipamento()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Existe\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se existe Equipamento através do código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de equipamento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se existir False se não existir
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86         \{}
+\DoxyCodeLine{87             \textcolor{keywordflow}{return} equ.Exists(e => e.e.Codigo == cod);}
+\DoxyCodeLine{88         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_a6d02e7d48157eee8f8aae8875a5d0b04}\label{classa3___dados_classes_1_1_equipamentos_a6d02e7d48157eee8f8aae8875a5d0b04}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!GuardarEquipamentos@{GuardarEquipamentos}}
+\index{GuardarEquipamentos@{GuardarEquipamentos}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{GuardarEquipamentos()}{GuardarEquipamentos()}}
+{\footnotesize\ttfamily static bool a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Guardar\+Equipamentos (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216         \{}
+\DoxyCodeLine{217             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{218             \{}
+\DoxyCodeLine{219                 Stream stream = File.Open(fileName, FileMode.Create);}
+\DoxyCodeLine{220                 BinaryFormatter bin = \textcolor{keyword}{new} BinaryFormatter();}
+\DoxyCodeLine{221                 bin.Serialize(stream, equ);}
+\DoxyCodeLine{222                 stream.Close();}
+\DoxyCodeLine{223                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{224             \}}
+\DoxyCodeLine{225             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{226             \{}
+\DoxyCodeLine{227                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(x.Message);}
+\DoxyCodeLine{228             \}}
+\DoxyCodeLine{229             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{230             \{}
+\DoxyCodeLine{231                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{232             \}}
+\DoxyCodeLine{233         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_a8790d7905bf9e7e1175da94c07fd14b3}\label{classa3___dados_classes_1_1_equipamentos_a8790d7905bf9e7e1175da94c07fd14b3}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!MostraEquipamentos@{MostraEquipamentos}}
+\index{MostraEquipamentos@{MostraEquipamentos}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{MostraEquipamentos()}{MostraEquipamentos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}}$>$ a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Mostra\+Equipamentos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta informação dos equipamentos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Equipamento Completo \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159         \{}
+\DoxyCodeLine{160             \textcolor{keywordflow}{foreach} (EquipamentoCompleto ec \textcolor{keywordflow}{in} equ)}
+\DoxyCodeLine{161             \{}
+\DoxyCodeLine{162                 \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{EquipamentoAux}} eAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{EquipamentoAux}}(ec.e.Codigo, ec.e.Tipo, ec.e.Marca, ec.e.Modelo, ec.e.DataAquisicao);}
+\DoxyCodeLine{163                 equAux.Add(eAux);}
+\DoxyCodeLine{164             \}}
+\DoxyCodeLine{165             \textcolor{keywordflow}{return} equAux;}
+\DoxyCodeLine{166         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_aac4fdd6b995feeef397f209a2b82c0df}\label{classa3___dados_classes_1_1_equipamentos_aac4fdd6b995feeef397f209a2b82c0df}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!ObterCodigoVulnerabilidade@{ObterCodigoVulnerabilidade}}
+\index{ObterCodigoVulnerabilidade@{ObterCodigoVulnerabilidade}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{ObterCodigoVulnerabilidade()}{ObterCodigoVulnerabilidade()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Obter\+Codigo\+Vulnerabilidade (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém código da vulnerabilidade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo Equipamento\\
+\hline
+{\em pos} & Posição do código da vulnerabilidade\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código da vulnerabilidade
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204         \{}
+\DoxyCodeLine{205             \textcolor{keywordflow}{foreach} (EquipamentoCompleto ec \textcolor{keywordflow}{in} equ)}
+\DoxyCodeLine{206                 \textcolor{keywordflow}{if} (ec.e.Codigo == cod)}
+\DoxyCodeLine{207                     \textcolor{keywordflow}{return} ec.codVulns[pos];}
+\DoxyCodeLine{208             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{209         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_ab252958c5a0f8bbf1c03894bca2f9bcf}\label{classa3___dados_classes_1_1_equipamentos_ab252958c5a0f8bbf1c03894bca2f9bcf}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!ObterEquipamento@{ObterEquipamento}}
+\index{ObterEquipamento@{ObterEquipamento}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{ObterEquipamento()}{ObterEquipamento()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{Equipamento\+Aux}} a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Obter\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém equipamento completo através do código recebido 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve equipamento completo
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{174         \{}
+\DoxyCodeLine{175             \textcolor{keywordflow}{foreach} (EquipamentoCompleto ec \textcolor{keywordflow}{in} equ)}
+\DoxyCodeLine{176                 \textcolor{keywordflow}{if} (ec.e.Codigo == cod)}
+\DoxyCodeLine{177                 \{}
+\DoxyCodeLine{178                     \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{EquipamentoAux}} eAux = \textcolor{keyword}{new} \mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_aux}{EquipamentoAux}}(ec.e.Codigo, ec.e.Tipo, ec.e.Marca, ec.e.Modelo, ec.e.DataAquisicao);}
+\DoxyCodeLine{179                     \textcolor{keywordflow}{return} eAux;}
+\DoxyCodeLine{180                 \}}
+\DoxyCodeLine{181             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{182         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_afd1f66bcebe4588f1a26c3c338780feb}\label{classa3___dados_classes_1_1_equipamentos_afd1f66bcebe4588f1a26c3c338780feb}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!ObterQuantidadeVulnerabilidadesEquipamento@{ObterQuantidadeVulnerabilidadesEquipamento}}
+\index{ObterQuantidadeVulnerabilidadesEquipamento@{ObterQuantidadeVulnerabilidadesEquipamento}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{ObterQuantidadeVulnerabilidadesEquipamento()}{ObterQuantidadeVulnerabilidadesEquipamento()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Obter\+Quantidade\+Vulnerabilidades\+Equipamento (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém quantidade de vulnerabilidades num equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código de equipamento\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantidade de vulnerabilidades do equipamento
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190         \{}
+\DoxyCodeLine{191             \textcolor{keywordflow}{foreach} (EquipamentoCompleto ec \textcolor{keywordflow}{in} equ)}
+\DoxyCodeLine{192                 \textcolor{keywordflow}{if} (ec.e.Codigo == cod)}
+\DoxyCodeLine{193                     \textcolor{keywordflow}{return} ec.codVulns.Count;}
+\DoxyCodeLine{194             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{195         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa3___dados_classes_1_1_equipamentos_a05101420d5e914e577ff3f39030aeb4e}\label{classa3___dados_classes_1_1_equipamentos_a05101420d5e914e577ff3f39030aeb4e}} 
+\index{a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}!RegistaEquipamento@{RegistaEquipamento}}
+\index{RegistaEquipamento@{RegistaEquipamento}!a3\_DadosClasses.Equipamentos@{a3\_DadosClasses.Equipamentos}}
+\doxysubsubsection{\texorpdfstring{RegistaEquipamento()}{RegistaEquipamento()}}
+{\footnotesize\ttfamily static int a3\+\_\+\+Dados\+Classes.\+Equipamentos.\+Regista\+Equipamento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento}{Equipamento}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista um equipamento 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Equipamento Completo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e.\+Codigo se o equipamento for inserido 0 se não for inserido o equipamento
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{62             \{}
+\DoxyCodeLine{63                 EquipamentoCompleto ec = \textcolor{keyword}{new} EquipamentoCompleto(e);}
+\DoxyCodeLine{64                 ec.e.Codigo = (equ.Count) + 1;}
+\DoxyCodeLine{65                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classa3___dados_classes_1_1_equipamentos_af60a10e69f07c12df9975871ce36f6fb}{ExisteEquipamento}}(e.\mbox{\hyperlink{classc1___objetos_negocio_1_1_equipamento_a0af20ae4eb721d0a9222a62f2f3f8524}{Codigo}}) == \textcolor{keyword}{true}) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{66                 equ.Add(ec);}
+\DoxyCodeLine{67                 \textcolor{keywordflow}{return} ec.e.Codigo;}
+\DoxyCodeLine{68             \}}
+\DoxyCodeLine{69             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{70             \{}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(x.Message);}
+\DoxyCodeLine{72             \}}
+\DoxyCodeLine{73             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{74             \{}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(x.Message);}
+\DoxyCodeLine{76             \}}
+\DoxyCodeLine{77         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a3\+\_\+\+Dados\+Classes/\mbox{\hyperlink{a3___dados_classes_2_equipamentos_8cs}{Equipamentos.\+cs}}\end{DoxyCompactItemize}

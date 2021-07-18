@@ -1,0 +1,442 @@
+\hypertarget{classa2___regras_negocio_1_1_aud_regras}{}\doxysection{a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras Class Reference}
+\label{classa2___regras_negocio_1_1_aud_regras}\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a07610f33a4702640ae604046502c49bb}{Regista\+Auditoria}} (\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria}{Auditoria}} a)
+\begin{DoxyCompactList}\small\item\em Regista uma auditoria verificando todas as regras e excecoes \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a4de8d4f123052595f386ad357daf0018}{Existe\+Auditoria}} (int cod)
+\begin{DoxyCompactList}\small\item\em Verifica se existe auditoria \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_ad5f52790a85eef84e1f9aefa9d49222c}{Quantidade\+Auditorias}} ()
+\begin{DoxyCompactList}\small\item\em Obtém a quantidade de auditorias \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_aa7754d681a46671760f44453bce41ae0}{Adiciona\+Vulnerabilidade\+Auditoria}} (int cod, int codv)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova vulnerabilidade a uma auditoria \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a8c8cb8ee647bc901816d4ab7eedf7c7b}{Edita\+Auditoria}} (int cod, Date\+Time data\+Registo, int duracao)
+\begin{DoxyCompactList}\small\item\em Edita as informações de uma auditoria \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} $>$ \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a80937ff3a94163ea3362eb1548be3c3d}{Mostra\+Auditorias}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta informação de auditoria detalhada \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} $>$ \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a85bea918887b150e17d95c84daecf746}{Apresenta\+Auditorias\+Colaborador}} (int codc)
+\begin{DoxyCompactList}\small\item\em Apresenta detalhes sobre as auditorias de um colaborador \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} $>$ \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a6d13f719d1c4e0323681015b78bbaa74}{Apresenta\+Auditorias\+Ordenadas\+Vuln}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta detalhes sobre as auditorias por ordem decrescente de vulnerabilidades \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a55a22a756411ae9e2e82914b4cae7376}{Obter\+Auditoria}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém auditoria completa através do código recebido \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a56b6d32ea71586ca62bb104e4f165df1}{Obter\+Quantidade\+Vulnerabilidades\+Auditoria}} (int cod)
+\begin{DoxyCompactList}\small\item\em Obtém quantidade de vulnerabilidades em uma auditoria \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a1719069469d7900191992ef2cb3af1dc}{Obter\+Auditoria\+Mais\+Vuln}} ()
+\begin{DoxyCompactList}\small\item\em Obtem a auditoria que tem mais vulnerabilidades registadas \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_ac2c980946bcd39613dcaaafa4f44b85a}{Obter\+Auditoria\+Menos\+Vuln}} ()
+\begin{DoxyCompactList}\small\item\em Obtem a auditoria que tem menos vulnerabilidades registadas \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a2a0b9db2516b27f4a2587719340843e8}{Obtem\+Media\+Vulns}} ()
+\begin{DoxyCompactList}\small\item\em Obtem a média de vulnerabilidades registadas nas auditorias \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_a85c291e33d8ab10677f8fe8fddb2051e}{Guardar\+Auditorias}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Guarda em ficheiro binário a informação relativa à classe Auditoria \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classa2___regras_negocio_1_1_aud_regras_aa5b15c02f3b45a77c1fbf9591d72a9e4}{Carregar\+Auditorias}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega o ficheiro binário com a informação relativa à classe Auditoria \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_aa7754d681a46671760f44453bce41ae0}\label{classa2___regras_negocio_1_1_aud_regras_aa7754d681a46671760f44453bce41ae0}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!AdicionaVulnerabilidadeAuditoria@{AdicionaVulnerabilidadeAuditoria}}
+\index{AdicionaVulnerabilidadeAuditoria@{AdicionaVulnerabilidadeAuditoria}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{AdicionaVulnerabilidadeAuditoria()}{AdicionaVulnerabilidadeAuditoria()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Adiciona\+Vulnerabilidade\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{int}]{codv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adiciona uma nova vulnerabilidade a uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Codigo de auditoria \\
+\hline
+{\em codv} & Codigo da Vulnerabilidade a adicionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se for adicionada False se não for adicionada
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82         \{}
+\DoxyCodeLine{83             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{84             \{}
+\DoxyCodeLine{85                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a4891cd669a3092c3f830cc82276b6083}{AdicionaVulnerabilidade}}(cod, codv);}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{88             \{}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{90             \}}
+\DoxyCodeLine{91             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{92             \{}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{94             \}}
+\DoxyCodeLine{95         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a85bea918887b150e17d95c84daecf746}\label{classa2___regras_negocio_1_1_aud_regras_a85bea918887b150e17d95c84daecf746}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ApresentaAuditoriasColaborador@{ApresentaAuditoriasColaborador}}
+\index{ApresentaAuditoriasColaborador@{ApresentaAuditoriasColaborador}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ApresentaAuditoriasColaborador()}{ApresentaAuditoriasColaborador()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}}$>$ a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Apresenta\+Auditorias\+Colaborador (\begin{DoxyParamCaption}\item[{int}]{codc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta detalhes sobre as auditorias de um colaborador 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codc} & Codigo da Vulnerabilidade a adicionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se forem apresentadas auditorias False se não forem apresentadas auditorias
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137         \{}
+\DoxyCodeLine{138             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_ab5274092b336c5b781a5a541a0575e1c}{ApresentaAuditoriasColaborador}}(codc);}
+\DoxyCodeLine{139         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a6d13f719d1c4e0323681015b78bbaa74}\label{classa2___regras_negocio_1_1_aud_regras_a6d13f719d1c4e0323681015b78bbaa74}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ApresentaAuditoriasOrdenadasVuln@{ApresentaAuditoriasOrdenadasVuln}}
+\index{ApresentaAuditoriasOrdenadasVuln@{ApresentaAuditoriasOrdenadasVuln}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ApresentaAuditoriasOrdenadasVuln()}{ApresentaAuditoriasOrdenadasVuln()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}}$>$ a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Apresenta\+Auditorias\+Ordenadas\+Vuln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta detalhes sobre as auditorias por ordem decrescente de vulnerabilidades 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145         \{}
+\DoxyCodeLine{146             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_aa268d50d1ec4e14fcb0a5fab3bfa5f61}{ApresentaAuditoriasOrdenadasVuln}}();}
+\DoxyCodeLine{147         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_aa5b15c02f3b45a77c1fbf9591d72a9e4}\label{classa2___regras_negocio_1_1_aud_regras_aa5b15c02f3b45a77c1fbf9591d72a9e4}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!CarregarAuditorias@{CarregarAuditorias}}
+\index{CarregarAuditorias@{CarregarAuditorias}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{CarregarAuditorias()}{CarregarAuditorias()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Carregar\+Auditorias (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega o ficheiro binário com a informação relativa à classe Auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221         \{}
+\DoxyCodeLine{222             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{223             \{}
+\DoxyCodeLine{224                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a997297c055be6aa08d16e9a4db6b682c}{CarregarAuditorias}}(fileName);}
+\DoxyCodeLine{225             \}}
+\DoxyCodeLine{226             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{227             \{}
+\DoxyCodeLine{228                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{229             \}}
+\DoxyCodeLine{230             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{231             \{}
+\DoxyCodeLine{232                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{233             \}}
+\DoxyCodeLine{234         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a8c8cb8ee647bc901816d4ab7eedf7c7b}\label{classa2___regras_negocio_1_1_aud_regras_a8c8cb8ee647bc901816d4ab7eedf7c7b}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!EditaAuditoria@{EditaAuditoria}}
+\index{EditaAuditoria@{EditaAuditoria}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{EditaAuditoria()}{EditaAuditoria()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Edita\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod,  }\item[{Date\+Time}]{data\+Registo,  }\item[{int}]{duracao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Edita as informações de uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código da auditoria a editar\\
+\hline
+{\em data\+Registo} & Nova data de Registo\\
+\hline
+{\em duracao} & Nova duração\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as informações forem editadas corretamente False se as informações não forem editadas corretamente 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106         \{}
+\DoxyCodeLine{107             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{108             \{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_afd69b2f3c73a13d75f1ac2c26cb41b76}{EditaAuditoria}}(cod, dataRegisto, duracao);}
+\DoxyCodeLine{110             \}}
+\DoxyCodeLine{111             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{112             \{}
+\DoxyCodeLine{113                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{114             \}}
+\DoxyCodeLine{115             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{116             \{}
+\DoxyCodeLine{117                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{118             \}}
+\DoxyCodeLine{119         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a4de8d4f123052595f386ad357daf0018}\label{classa2___regras_negocio_1_1_aud_regras_a4de8d4f123052595f386ad357daf0018}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ExisteAuditoria@{ExisteAuditoria}}
+\index{ExisteAuditoria@{ExisteAuditoria}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ExisteAuditoria()}{ExisteAuditoria()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Existe\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se existe auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se existir False se não existir
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61         \{}
+\DoxyCodeLine{62             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_acf9d1976b629df08d7ead98e1cb90ec3}{ExisteAuditoria}}(cod);}
+\DoxyCodeLine{63         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a85c291e33d8ab10677f8fe8fddb2051e}\label{classa2___regras_negocio_1_1_aud_regras_a85c291e33d8ab10677f8fe8fddb2051e}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!GuardarAuditorias@{GuardarAuditorias}}
+\index{GuardarAuditorias@{GuardarAuditorias}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{GuardarAuditorias()}{GuardarAuditorias()}}
+{\footnotesize\ttfamily static bool a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Guardar\+Auditorias (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda em ficheiro binário a informação relativa à classe Auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Diretório do ficheiro\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{201         \{}
+\DoxyCodeLine{202             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{203             \{}
+\DoxyCodeLine{204                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a5fc5c1a88ef3fa92c05a736315965590}{GuardarAuditorias}}(fileName);}
+\DoxyCodeLine{205             \}}
+\DoxyCodeLine{206             \textcolor{keywordflow}{catch} (IOException x)}
+\DoxyCodeLine{207             \{}
+\DoxyCodeLine{208                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{209             \}}
+\DoxyCodeLine{210             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{211             \{}
+\DoxyCodeLine{212                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{213             \}}
+\DoxyCodeLine{214         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a80937ff3a94163ea3362eb1548be3c3d}\label{classa2___regras_negocio_1_1_aud_regras_a80937ff3a94163ea3362eb1548be3c3d}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!MostraAuditorias@{MostraAuditorias}}
+\index{MostraAuditorias@{MostraAuditorias}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{MostraAuditorias()}{MostraAuditorias()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}}$>$ a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Mostra\+Auditorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apresenta informação de auditoria detalhada 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Auditoria Completa \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126         \{}
+\DoxyCodeLine{127             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_ada28d62bb9620451f9af391ce2a5c48b}{MostraAuditorias}}();}
+\DoxyCodeLine{128         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a2a0b9db2516b27f4a2587719340843e8}\label{classa2___regras_negocio_1_1_aud_regras_a2a0b9db2516b27f4a2587719340843e8}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ObtemMediaVulns@{ObtemMediaVulns}}
+\index{ObtemMediaVulns@{ObtemMediaVulns}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ObtemMediaVulns()}{ObtemMediaVulns()}}
+{\footnotesize\ttfamily static double a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Obtem\+Media\+Vulns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtem a média de vulnerabilidades registadas nas auditorias 
+
+\begin{DoxyReturn}{Returns}
+Media de vulnerabilidades registadas
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{192         \{}
+\DoxyCodeLine{193             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a2c61267a74a703a958f6b8bde88bcd39}{ObtemMediaVulns}}();}
+\DoxyCodeLine{194         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a55a22a756411ae9e2e82914b4cae7376}\label{classa2___regras_negocio_1_1_aud_regras_a55a22a756411ae9e2e82914b4cae7376}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ObterAuditoria@{ObterAuditoria}}
+\index{ObterAuditoria@{ObterAuditoria}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ObterAuditoria()}{ObterAuditoria()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Obter\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém auditoria completa através do código recebido 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código da auditoria\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve auditoria completa
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155         \{}
+\DoxyCodeLine{156             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_a76c487a4fe2db6faeccd45972b863475}{ObterAuditoria}}(cod);}
+\DoxyCodeLine{157         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a1719069469d7900191992ef2cb3af1dc}\label{classa2___regras_negocio_1_1_aud_regras_a1719069469d7900191992ef2cb3af1dc}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ObterAuditoriaMaisVuln@{ObterAuditoriaMaisVuln}}
+\index{ObterAuditoriaMaisVuln@{ObterAuditoriaMaisVuln}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ObterAuditoriaMaisVuln()}{ObterAuditoriaMaisVuln()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Obter\+Auditoria\+Mais\+Vuln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtem a auditoria que tem mais vulnerabilidades registadas 
+
+\begin{DoxyReturn}{Returns}
+Auditoria com mais vulnerabilidades
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{174         \{}
+\DoxyCodeLine{175             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_ad427662a622a3658d5f702812187fd20}{ObterAuditoriaMaisVuln}}();}
+\DoxyCodeLine{176         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_ac2c980946bcd39613dcaaafa4f44b85a}\label{classa2___regras_negocio_1_1_aud_regras_ac2c980946bcd39613dcaaafa4f44b85a}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ObterAuditoriaMenosVuln@{ObterAuditoriaMenosVuln}}
+\index{ObterAuditoriaMenosVuln@{ObterAuditoriaMenosVuln}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ObterAuditoriaMenosVuln()}{ObterAuditoriaMenosVuln()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria_aux}{Auditoria\+Aux}} a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Obter\+Auditoria\+Menos\+Vuln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtem a auditoria que tem menos vulnerabilidades registadas 
+
+\begin{DoxyReturn}{Returns}
+Auditoria com menos vulnerabilidades
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183         \{}
+\DoxyCodeLine{184             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_abc5082738a3de21aa2124e423c441838}{ObterAuditoriaMenosVuln}}();}
+\DoxyCodeLine{185         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a56b6d32ea71586ca62bb104e4f165df1}\label{classa2___regras_negocio_1_1_aud_regras_a56b6d32ea71586ca62bb104e4f165df1}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!ObterQuantidadeVulnerabilidadesAuditoria@{ObterQuantidadeVulnerabilidadesAuditoria}}
+\index{ObterQuantidadeVulnerabilidadesAuditoria@{ObterQuantidadeVulnerabilidadesAuditoria}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{ObterQuantidadeVulnerabilidadesAuditoria()}{ObterQuantidadeVulnerabilidadesAuditoria()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Obter\+Quantidade\+Vulnerabilidades\+Auditoria (\begin{DoxyParamCaption}\item[{int}]{cod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém quantidade de vulnerabilidades em uma auditoria 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & Código de auditoria\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantidade de vulnerabilidades da auditoria
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165         \{}
+\DoxyCodeLine{166             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_acab32be1b14019c445b8dc83fe9cd657}{ObterQuantidadeVulnerabilidadesAuditoria}}(cod);}
+\DoxyCodeLine{167         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_ad5f52790a85eef84e1f9aefa9d49222c}\label{classa2___regras_negocio_1_1_aud_regras_ad5f52790a85eef84e1f9aefa9d49222c}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!QuantidadeAuditorias@{QuantidadeAuditorias}}
+\index{QuantidadeAuditorias@{QuantidadeAuditorias}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{QuantidadeAuditorias()}{QuantidadeAuditorias()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Quantidade\+Auditorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém a quantidade de auditorias 
+
+\begin{DoxyReturn}{Returns}
+Devolve a quantidade de auditorias
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71             \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_aa71191f8cf4cfc450cce22c242e21c87}{QuantidadeAuditorias}}();}
+\DoxyCodeLine{72         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classa2___regras_negocio_1_1_aud_regras_a07610f33a4702640ae604046502c49bb}\label{classa2___regras_negocio_1_1_aud_regras_a07610f33a4702640ae604046502c49bb}} 
+\index{a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}!RegistaAuditoria@{RegistaAuditoria}}
+\index{RegistaAuditoria@{RegistaAuditoria}!a2\_RegrasNegocio.AudRegras@{a2\_RegrasNegocio.AudRegras}}
+\doxysubsubsection{\texorpdfstring{RegistaAuditoria()}{RegistaAuditoria()}}
+{\footnotesize\ttfamily static int a2\+\_\+\+Regras\+Negocio.\+Aud\+Regras.\+Regista\+Auditoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc1___objetos_negocio_1_1_auditoria}{Auditoria}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Regista uma auditoria verificando todas as regras e excecoes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39         \{}
+\DoxyCodeLine{40             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{41             \{}
+\DoxyCodeLine{42                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classa3___dados_classes_1_1_auditorias}{Auditorias}}.\mbox{\hyperlink{classa3___dados_classes_1_1_auditorias_afc0eb7a262b4f0690cc53a364e5d1c32}{RegistaAuditoria}}(a);}
+\DoxyCodeLine{43             \}}
+\DoxyCodeLine{44             \textcolor{keywordflow}{catch} (IndexOutOfRangeException x)}
+\DoxyCodeLine{45             \{}
+\DoxyCodeLine{46                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FormatException(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{47             \}}
+\DoxyCodeLine{48             \textcolor{keywordflow}{catch} (Exception x)}
+\DoxyCodeLine{49             \{}
+\DoxyCodeLine{50                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"ERRO: "} + x.Message);}
+\DoxyCodeLine{51             \}}
+\DoxyCodeLine{52         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+a2\+\_\+\+Regras\+Negocio/\mbox{\hyperlink{a2___regras_negocio_2_auditorias_8cs}{Auditorias.\+cs}}\end{DoxyCompactItemize}
